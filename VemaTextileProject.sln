@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VemaTextileProject", "VemaTextileProject\VemaTextileProject.csproj", "{C8D56BE8-96FA-4509-894D-A05C08C03D8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VemaTextile.BLL", "VemaTextile.BLL\VemaTextile.BLL.csproj", "{1A821A30-5A8B-48A3-BD67-72971D87B919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VemaTextile.Core", "VemaTextile.core\VemaTextile.Core.csproj", "{52854A57-AE0C-4ACA-85CC-F897EE627931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VemaTextile.DAL", "VemaTextile.DAL\VemaTextile.DAL.csproj", "{A8E3BCD8-5960-4CDB-A06E-ABCA6B0E84C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VemaTextile.Entity", "VemaTextile.Entity\VemaTextile.Entity.csproj", "{D839A77A-15FE-4123-99B5-68EB4D72FD2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VemaTextile.Repository", "VemaTextile.Repository\VemaTextile.Repository.csproj", "{B2666638-0B41-42B3-87A8-E0FDB86945BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{C8D56BE8-96FA-4509-894D-A05C08C03D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D56BE8-96FA-4509-894D-A05C08C03D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D56BE8-96FA-4509-894D-A05C08C03D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A821A30-5A8B-48A3-BD67-72971D87B919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A821A30-5A8B-48A3-BD67-72971D87B919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A821A30-5A8B-48A3-BD67-72971D87B919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A821A30-5A8B-48A3-BD67-72971D87B919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52854A57-AE0C-4ACA-85CC-F897EE627931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52854A57-AE0C-4ACA-85CC-F897EE627931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52854A57-AE0C-4ACA-85CC-F897EE627931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52854A57-AE0C-4ACA-85CC-F897EE627931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E3BCD8-5960-4CDB-A06E-ABCA6B0E84C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E3BCD8-5960-4CDB-A06E-ABCA6B0E84C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E3BCD8-5960-4CDB-A06E-ABCA6B0E84C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E3BCD8-5960-4CDB-A06E-ABCA6B0E84C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D839A77A-15FE-4123-99B5-68EB4D72FD2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D839A77A-15FE-4123-99B5-68EB4D72FD2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D839A77A-15FE-4123-99B5-68EB4D72FD2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D839A77A-15FE-4123-99B5-68EB4D72FD2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2666638-0B41-42B3-87A8-E0FDB86945BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2666638-0B41-42B3-87A8-E0FDB86945BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2666638-0B41-42B3-87A8-E0FDB86945BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2666638-0B41-42B3-87A8-E0FDB86945BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
