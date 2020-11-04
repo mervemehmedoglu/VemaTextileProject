@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,7 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,10 +51,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\AciklamaTanimlar.cs" />
+    <Compile Include="Entity\AlinanCekler.cs" />
+    <Compile Include="Entity\AlinanSenetler.cs" />
+    <Compile Include="Entity\CariHesapKartlari.cs" />
+    <Compile Include="Entity\CariHesapİslemleri.cs" />
+    <Compile Include="Entity\CRMCode.cs" />
+    <Compile Include="Entity\EylemVeGorevler.cs" />
+    <Compile Include="Entity\FaturaBilgileri.cs" />
+    <Compile Include="Entity\GeriOdemeIslemleri.cs" />
+    <Compile Include="Entity\GeriOdemePlani.cs" />
+    <Compile Include="Entity\KarmaKoli.cs" />
+    <Compile Include="Entity\KarmaKoli2.cs" />
+    <Compile Include="Entity\Kod.cs" />
+    <Compile Include="Entity\Kullanicilar.cs" />
+    <Compile Include="Entity\MuhasebeEntegrasyonTablosu.cs" />
+    <Compile Include="Entity\MuhasebeGrupKartlari.cs" />
+    <Compile Include="Entity\MuhasebeHesapKartlari.cs" />
+    <Compile Include="Entity\MuhasebeIslemleri.cs" />
+    <Compile Include="Entity\MuhasebeIsletme.cs" />
+    <Compile Include="Entity\MuhasebeIsletmeKodlari.cs" />
+    <Compile Include="Entity\MuhasebeMasrafMerkeziKartlari.cs" />
+    <Compile Include="Entity\OdemePlani.cs" />
+    <Compile Include="Entity\ProjeGorevAciklama.cs" />
+    <Compile Include="Entity\ProjeGorevler.cs" />
+    <Compile Include="Entity\ProjeKategoriler.cs" />
+    <Compile Include="Entity\ProjeKaynaklar.cs" />
+    <Compile Include="Entity\ProjeTakibi.cs" />
+    <Compile Include="Entity\Required.cs" />
+    <Compile Include="Entity\Sayimİslemleri.cs" />
+    <Compile Include="Entity\SilinenKayitlar.cs" />
+    <Compile Include="Entity\SiparisIslemleri.cs" />
+    <Compile Include="Entity\SonEvrakNotlar.cs" />
+    <Compile Include="Entity\StokIslemleri.cs" />
+    <Compile Include="Entity\StokKartlari.cs" />
+    <Compile Include="Entity\TaahhutAciklama.cs" />
+    <Compile Include="Entity\TaahhutIsTakibi.cs" />
+    <Compile Include="Entity\TaahhutKesifOzeti.cs" />
+    <Compile Include="Entity\TaahhutMaliyet.cs" />
+    <Compile Include="Entity\TaahhutMDetay.cs" />
+    <Compile Include="Entity\TaahhutPrimTakibi.cs" />
+    <Compile Include="Entity\TaahhutProjeTakibi.cs" />
+    <Compile Include="Entity\TaahhutTeklif.cs" />
+    <Compile Include="Entity\TaahhutTeklifMaliyet.cs" />
+    <Compile Include="Entity\TaahhutTeklifUstaBilgileri.cs" />
+    <Compile Include="Entity\TaahhutUstaBilgileri.cs" />
+    <Compile Include="Entity\TahsilatPlani.cs" />
+    <Compile Include="Entity\TeklifAciklama.cs" />
+    <Compile Include="Entity\TeklifIslemleri.cs" />
+    <Compile Include="Entity\UretimRecetesi.cs" />
+    <Compile Include="Entity\UstaKartlari.cs" />
+    <Compile Include="Entity\VerilenCekler.cs" />
+    <Compile Include="Entity\VerilenSenetler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>
