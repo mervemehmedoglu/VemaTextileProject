@@ -40,9 +40,13 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.9.2.2\lib\net461\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +56,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Abstracts\ICookieService.cs" />
+    <Compile Include="Services\Abstracts\IEncryptor.cs" />
+    <Compile Include="Services\Abstracts\IMessaging.cs" />
+    <Compile Include="Services\Abstracts\IPictureService.cs" />
+    <Compile Include="Services\Abstracts\ISeoUrlMaker.cs" />
+    <Compile Include="Services\Abstracts\IUploadService.cs" />
+    <Compile Include="Services\Concretes\CategoryPictureService.cs" />
+    <Compile Include="Services\Concretes\CookieService.cs" />
+    <Compile Include="Services\Concretes\CustomerPictureService.cs" />
+    <Compile Include="Services\Concretes\ForgetPasswordResult.cs" />
+    <Compile Include="Services\Concretes\MailManager.cs" />
+    <Compile Include="Services\Concretes\Md5HashProvider.cs" />
+    <Compile Include="Services\Concretes\PhotoUploadService.cs" />
+    <Compile Include="Services\Concretes\ProductPictureService.cs" />
+    <Compile Include="Services\Concretes\SeoUrlMaker.cs" />
+    <Compile Include="Services\Validations\StockValidations\StockAddValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VemaTextile.core\VemaTextile.Core.csproj">
+      <Project>{52854a57-ae0c-4aca-85cc-f897ee627931}</Project>
+      <Name>VemaTextile.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VemaTextile.Entity\VemaTextile.Entity.csproj">
+      <Project>{d839a77a-15fe-4123-99b5-68eb4d72fd2b}</Project>
+      <Name>VemaTextile.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VemaTextile.Repository\VemaTextile.Repository.csproj">
+      <Project>{b2666638-0b41-42b3-87a8-e0fdb86945bd}</Project>
+      <Name>VemaTextile.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
