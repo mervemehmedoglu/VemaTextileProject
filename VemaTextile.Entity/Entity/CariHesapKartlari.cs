@@ -199,13 +199,5 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(18,0)")]
         public decimal RowID { get; set; }
 
-
-
-        
-            
-
-
-
-
     }
 }
