@@ -56,6 +56,7 @@ namespace VemaTextile.Models.Class
         public DateTime DegisiklikTarihi { get; set; }
         public DateTime DegisiklikSaati { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal Row_ID { get; set; }

@@ -13,13 +13,11 @@ namespace VemaTextile.Models.Class
         [Required]
         public DateTime Tarih { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
@@ -125,7 +123,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Diger10Aciklama { get; set; }
-
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal AnlasmaTutari { get; set; }

@@ -9,7 +9,6 @@ namespace VemaTextile.Models.Class
 {
     public class ProjeKategoriler
     {
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -66,7 +65,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Constraint { get; set; }
 
-
+        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
@@ -113,8 +112,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string SonTarih { get; set; }
-
-
         
         [Required]
         [Column(TypeName = "decimal(18,0)")]

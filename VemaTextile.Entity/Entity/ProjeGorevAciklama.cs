@@ -21,7 +21,6 @@ namespace VemaTextile.Models.Class
         [StringLength(40)]
         public string GorevID { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

@@ -9,7 +9,6 @@ namespace VemaTextile.Models.Class
 {
     public class MuhasebeIsletme
     {
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -24,8 +23,6 @@ namespace VemaTextile.Models.Class
 
         public DateTime Tarih { get; set; }
 
-        
-        [Key]
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal EvrakNo { get; set; }
@@ -38,7 +35,6 @@ namespace VemaTextile.Models.Class
         [Required]
         public DateTime VadeTarih { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -80,7 +76,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(18,6)")]
         public decimal Iade { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]

@@ -6,7 +6,6 @@ namespace VemaTextile.Models.Class
 {
     public class MuhasebeHesapKartlari
     {
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

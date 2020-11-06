@@ -9,13 +9,11 @@ namespace VemaTextile.Models.Class
 {
     public class GeriOdemePlani
     {
-        [Key]
         [Required]
         [Column(TypeName = "varchar")]
         [StringLength(50)]
         public string HesapKodu { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "varchar")]
         [StringLength(50)]
