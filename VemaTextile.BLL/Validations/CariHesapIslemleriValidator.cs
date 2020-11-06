@@ -18,25 +18,17 @@ namespace VemaTextile.BLL.Validations
         {
             _unitOfWork = unitOfWork;
             RuleFor(x => x.IslemTuru)
-                .NotEmpty().WithMessage("Kategori Adı alanı boş bırakılamaz.");
+                .NotNull().WithMessage("Parametre alanı boş geçilemez");
             RuleFor(x => x.KaynakEvrakTipi)
-                .NotEmpty().WithMessage("Kategori Adı alanı boş bırakılamaz.");
+                 .NotNull().WithMessage("Parametre alanı boş geçilemez");
             RuleFor(x => x.HesapKodu)
-                .NotEmpty().WithMessage("Kategori Adı alanı boş bırakılamaz.");
+                 .NotNull().WithMessage("Parametre alanı boş geçilemez");
             RuleFor(x => x.HesapAdi)
-                .NotEmpty().WithMessage("Kategori Adı alanı boş bırakılamaz.");
+                .NotNull().WithMessage("Parametre alanı boş geçilemez");
             RuleFor(x => x.Kaydeden)
-                .NotEmpty().WithMessage("Kategori Adı alanı boş bırakılamaz.");
-            
-
-
+                .NotNull().WithMessage("Parametre alanı boş geçilemez");
         }
-        private bool BeAValidDate(DateTime date)
-        {
-            if (date == default(DateTime))
-                return false;
-            return true;
-        }
+        
 
     }
 }

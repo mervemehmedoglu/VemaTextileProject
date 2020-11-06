@@ -9,7 +9,7 @@ namespace VemaTextile.Models.Class
 {
     public class MuhasebeIslemleri
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -21,12 +21,12 @@ namespace VemaTextile.Models.Class
 
         public DateTime Tarih { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "money")]
         public string FisNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "money")]
         public decimal MaddeNo { get; set; }
@@ -147,12 +147,5 @@ namespace VemaTextile.Models.Class
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal Row_ID { get; set; }
-
-
-
-
-
-
-
     }
 }
