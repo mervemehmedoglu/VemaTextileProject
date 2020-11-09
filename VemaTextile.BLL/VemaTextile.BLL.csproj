@@ -83,7 +83,6 @@
     <Compile Include="Validations\MuhasebeHesapKartlariValidator.cs" />
     <Compile Include="Validations\MuhasebeIsletmeValidator.cs" />
     <Compile Include="Validations\MuhasebeMasrafMerkeziKartlari.cs" />
-    <Compile Include="Validations\MuhasebeMsrafMerkeziKartlari.cs" />
     <Compile Include="Validations\ProjeGorevAciklama.cs" />
     <Compile Include="Validations\ProjeKategoriler.cs" />
     <Compile Include="Validations\ProjeTakibi.cs" />
