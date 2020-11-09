@@ -9,31 +9,31 @@ namespace VemaTextile.Models.Class
 {
     public class GeriOdemeIslemleri
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string HesapKodu { get; set; }
 
-        [Key]
+       
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string BankaHesapKodu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string TahsilatTipi { get; set; }
 
-        [Key]
+       
         [Required]
         public DateTime VadeTarihi { get; set; }
 

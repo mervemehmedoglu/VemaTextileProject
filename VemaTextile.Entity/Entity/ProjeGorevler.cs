@@ -9,7 +9,7 @@ namespace VemaTextile.Models.Class
 {
     public class ProjeGorevler
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -32,7 +32,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string TaskName { get; set; }
 
-        [Key]
+        
         [Required]
         public DateTime TaskStartTime { get; set; }
 
@@ -45,7 +45,7 @@ namespace VemaTextile.Models.Class
         [Required]
         public DateTime BitisPlanTarihi { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -66,6 +66,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Onculler { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
@@ -76,25 +77,24 @@ namespace VemaTextile.Models.Class
         [StringLength(500)]
         public string OnculTask { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kullanan { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kullanan2 { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Durum { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(1)]
