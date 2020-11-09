@@ -77,16 +77,6 @@
     <Compile Include="Validations\AlinanCeklerUpdateValidator.cs" />
     <Compile Include="Validations\AlinanSenetlerValidator.cs" />
     <Compile Include="Validations\CariHesapIslemleriValidator.cs" />
-    <Compile Include="Validations\CariHesapKartlariValidator.cs" />
-    <Compile Include="Validations\FaturaBilgileriValidatior.cs" />
-    <Compile Include="Validations\GeriOdemePlaniValidator.cs" />
-    <Compile Include="Validations\MuhasebeHesapKartlariValidator.cs" />
-    <Compile Include="Validations\MuhasebeIsletmeValidator.cs" />
-    <Compile Include="Validations\MuhasebeMasrafMerkeziKartlari.cs" />
-    <Compile Include="Validations\MuhasebeMsrafMerkeziKartlari.cs" />
-    <Compile Include="Validations\ProjeGorevAciklama.cs" />
-    <Compile Include="Validations\ProjeKategoriler.cs" />
-    <Compile Include="Validations\ProjeTakibi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -106,9 +96,7 @@
       <Name>VemaTextile.Repository</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Validations\AccountingValidations\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
