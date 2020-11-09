@@ -9,7 +9,7 @@ namespace VemaTextile.Models.Class
 {
     public class MuhasebeIsletmeKodlari
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

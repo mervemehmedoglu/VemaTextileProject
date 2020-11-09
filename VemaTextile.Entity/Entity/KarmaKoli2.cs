@@ -201,6 +201,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IDMailKodu { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal Row_ID { get; set; }

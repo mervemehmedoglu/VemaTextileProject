@@ -62,6 +62,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string GorevAdi { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
