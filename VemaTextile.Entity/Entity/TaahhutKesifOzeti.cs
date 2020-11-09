@@ -7,18 +7,18 @@ namespace VemaTextile.Models.Class
     public class TaahhutKesifOzeti
     {
 
-        [Key]
+        
         [Required]
         public DateTime Tarih { get; set; }
 
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
@@ -29,13 +29,13 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(18,0)")]
         public decimal IdNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string CHKKodu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

@@ -9,19 +9,19 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutTeklifUstaBilgileri
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string UstaKodu{ get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

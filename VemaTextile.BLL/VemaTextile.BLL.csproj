@@ -78,14 +78,32 @@
     <Compile Include="Validations\AlinanSenetlerValidator.cs" />
     <Compile Include="Validations\CariHesapIslemleriValidator.cs" />
     <Compile Include="Validations\CariHesapKartlariValidator.cs" />
+    <Compile Include="Validations\EylemVeGorevlerValidator.cs" />
     <Compile Include="Validations\FaturaBilgileriValidatior.cs" />
+    <Compile Include="Validations\GeriOdemeIslemleriValidator.cs" />
     <Compile Include="Validations\GeriOdemePlaniValidator.cs" />
+    <Compile Include="Validations\KarmaKoli2Validator.cs" />
     <Compile Include="Validations\MuhasebeHesapKartlariValidator.cs" />
+    <Compile Include="Validations\MuhasebeIslemleriValidator.cs" />
+    <Compile Include="Validations\MuhasebeIsletmeKodlariValidator.cs" />
     <Compile Include="Validations\MuhasebeIsletmeValidator.cs" />
     <Compile Include="Validations\MuhasebeMasrafMerkeziKartlari.cs" />
+    <Compile Include="Validations\OdemePlaniValidator.cs" />
     <Compile Include="Validations\ProjeGorevAciklama.cs" />
+    <Compile Include="Validations\ProjeGorevlerValidator.cs" />
     <Compile Include="Validations\ProjeKategoriler.cs" />
+    <Compile Include="Validations\ProjeKaynaklarValidator.cs" />
     <Compile Include="Validations\ProjeTakibi.cs" />
+    <Compile Include="Validations\SilinenKayitlarValidator.cs" />
+    <Compile Include="Validations\SiparisIslemleriValidator.cs" />
+    <Compile Include="Validations\StokIslemleriValidator.cs" />
+    <Compile Include="Validations\StokKartlariValidator.cs" />
+    <Compile Include="Validations\TaahhutKesifOzetiValidator.cs" />
+    <Compile Include="Validations\TaahhutMDetayValidator.cs" />
+    <Compile Include="Validations\TaahhutProjeTakibiValidator.cs" />
+    <Compile Include="Validations\TaahhutTeklifUstaBilgileriValidator.cs" />
+    <Compile Include="Validations\TeklifIslemleriValidator.cs" />
+    <Compile Include="Validations\VerilenCeklerValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

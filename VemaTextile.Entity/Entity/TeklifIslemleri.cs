@@ -9,13 +9,13 @@ namespace VemaTextile.Models.Class
 {
     public class TeklifIslemleri
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string MalKodu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -29,19 +29,19 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Aciklama { get; set; }
 
-        [Key]
+        
         [Required]
         public DateTime Tarih { get; set; }
 
         public DateTime SevkTarihi { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
@@ -60,25 +60,25 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string TeklifNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTipi { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTuru { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string CHKKodu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -137,7 +137,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string TeklifDurumu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -211,7 +211,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod6 { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
