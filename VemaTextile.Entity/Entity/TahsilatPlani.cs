@@ -38,7 +38,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string OdemeTipi { get; set; }
 
-        [Key]
         [Required]
         public DateTime OdemeTarihi { get; set; }
 
@@ -49,7 +48,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Aciklama { get; set; }
-
 
         [Column(TypeName = "money")]
         public decimal Tutar { get; set; }

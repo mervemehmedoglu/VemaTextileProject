@@ -9,7 +9,6 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutUstaBilgileri
     {
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -21,7 +20,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string UstaKodu { get; set; }
 
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -58,14 +56,13 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string HakedisEvrakNo { get; set; }
 
-        [Key]
         [Required]
         public DateTime BaslangicTarihi { get; set; }
 
-        [Key]
         [Required]
         public DateTime BitisTarihi { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

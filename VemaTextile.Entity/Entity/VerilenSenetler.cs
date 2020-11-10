@@ -9,7 +9,6 @@ namespace VemaTextile.Models.Class
 {
     public class VerilenSenetler
     {
-        [Key]
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal EvrakNo { get; set; }
@@ -18,7 +17,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string Seri { get; set; }
-
 
 
         [Column(TypeName = "decimal(18,0)")]
@@ -48,7 +46,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string SenetTipi { get; set; }
 
-        [Key]
         [Required]
         public DateTime VadeTarihi { get; set; }
 
@@ -148,6 +145,7 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal Row_ID { get; set; }
