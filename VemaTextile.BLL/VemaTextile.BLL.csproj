@@ -94,15 +94,21 @@
     <Compile Include="Validations\ProjeKategoriler.cs" />
     <Compile Include="Validations\ProjeKaynaklarValidator.cs" />
     <Compile Include="Validations\ProjeTakibi.cs" />
-    <Compile Include="Validations\Sayimİslemleri.cs" />
-    <Compile Include="Validations\SonEvrakNotlar.cs" />
-    <Compile Include="Validations\TaahhutMaliyet.cs" />
-    <Compile Include="Validations\TaahhutTeklifMaliyet.cs" />
-    <Compile Include="Validations\TaahhutUstaBilgileri.cs" />
-    <Compile Include="Validations\TahsilatPlani.cs" />
-    <Compile Include="Validations\VerilenSenetler.cs" />
+    <Compile Include="Validations\SilinenKayitlarValidator.cs" />
+    <Compile Include="Validations\SiparisIslemleriValidator.cs" />
+    <Compile Include="Validations\StokIslemleriValidator.cs" />
+    <Compile Include="Validations\StokKartlariValidator.cs" />
+    <Compile Include="Validations\TaahhutKesifOzetiValidator.cs" />
+    <Compile Include="Validations\TaahhutMDetayValidator.cs" />
+    <Compile Include="Validations\TaahhutProjeTakibiValidator.cs" />
+    <Compile Include="Validations\TaahhutTeklifUstaBilgileriValidator.cs" />
+    <Compile Include="Validations\TeklifIslemleriValidator.cs" />
+    <Compile Include="Validations\VerilenCeklerValidator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

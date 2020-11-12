@@ -9,13 +9,13 @@ namespace VemaTextile.Models.Class
 {
     public class SiparisIslemleri
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string MalKodu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -34,13 +34,13 @@ namespace VemaTextile.Models.Class
 
         public DateTime SevkTarihi { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
@@ -51,7 +51,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(18,0)")]
         public string IdNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -62,28 +62,28 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string SiparisNo { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTipi { get; set; }
 
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTuru { get; set; }
 
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string CHKKodu { get; set; }
 
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -142,7 +142,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string SiparisDurumu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -213,7 +213,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod6 { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -228,6 +228,7 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

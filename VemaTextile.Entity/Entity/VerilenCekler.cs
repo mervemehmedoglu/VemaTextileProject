@@ -9,7 +9,7 @@ namespace VemaTextile.Models.Class
 {
     public class VerilenCekler
     {
-        [Key]
+        
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal EvrakNo { get; set; }
@@ -48,7 +48,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string CekTipi { get; set; }
 
-        [Key]
+        
         [Required]
         public DateTime VadeTarihi { get; set; }
 

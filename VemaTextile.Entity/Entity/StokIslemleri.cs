@@ -43,6 +43,7 @@ namespace VemaTextile.Models.Class
         [StringLength(4)]
         public string Seri { get; set; }
 
+        [Key]
         [Required]
         [Column(TypeName = "decimal(18,0)")]
         public decimal IdNo { get; set; }
