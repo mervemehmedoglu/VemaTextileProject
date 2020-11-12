@@ -54,11 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ORM\EntityFramework\Context\ProjectContext.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\Aciklama\AciklamaMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\Alinan\AlinanCeklerMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\Alinan\AlinanSenetlerMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\CariHesap\CariHesapİslemleriMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\GeriOdeme\GeriOdemePlani.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\GeriOdeme\GeriOdemeİslemleriMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VemaTextile.Entity\VemaTextile.Entity.csproj">
+      <Project>{d839a77a-15fe-4123-99b5-68eb4d72fd2b}</Project>
+      <Name>VemaTextile.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
