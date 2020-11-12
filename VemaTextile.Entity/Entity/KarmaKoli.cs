@@ -46,7 +46,7 @@ namespace VemaTextile.Models.Class
         public string Birim1 { get; set; }
 
         [Column(TypeName = "money")]
-        public string Miktar { get; set; }
+        public decimal Miktar { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -73,20 +73,18 @@ namespace VemaTextile.Models.Class
         public string Kod3 { get; set; }
 
         [Column(TypeName = "money")]
-        public string BirimFiyat { get; set; }
+        public decimal BirimFiyat { get; set; }
 
         [Column(TypeName = "money")]
-        public string BirimTutar { get; set; }
+        public decimal BirimTutar { get; set; }
 
         [Column(TypeName = "money")]
-        public string Fİyat { get; set; }
+        public decimal Fiyat { get; set; }
 
         [Column(TypeName = "money")]
-        public string Tutar { get; set; }
+        public decimal Tutar { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDMalKodu { get; set; }
+        
 
        
     }

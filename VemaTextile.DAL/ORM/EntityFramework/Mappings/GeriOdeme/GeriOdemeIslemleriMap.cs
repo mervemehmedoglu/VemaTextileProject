@@ -14,52 +14,49 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
     {
         public GeriOdemeIslemleriMap()
         {
-            ToTable("Geri Odeme Islemleri Tablosu");
+            ToTable("GeriOdemeIslemleriTablosu");
 
 
             Property(u => u.HesapKodu)
                 .IsRequired()
                 .HasMaxLength(20)
-                .HasColumnName("Hesap Kodu");
+                .HasColumnName("HesapKodu");
 
             Property(u => u.BankaHesapKodu)
                .IsRequired()
                .HasMaxLength(20)
-               .HasColumnName("Banka Hesap Kodu");
+               .HasColumnName("BankaHesapKodu");
 
             Property(u => u.EvrakNo)
                .IsRequired()
                .HasMaxLength(8)
-               .HasColumnName("Evrak No");
+               .HasColumnName("EvrakNo");
 
             Property(u => u.TahsilatTipi)
                .IsRequired()
                .HasMaxLength(20)
-               .HasColumnName("Tahsilat Tipi");
+               .HasColumnName("TahsilatTipi");
 
             Property(u => u.VadeTarihi)
                .IsRequired()
-               .HasColumnName("Vade Tarihi ");
+               .HasColumnName("VadeTarihi ");
 
             Property(u => u.Tutar)
-               .HasColumnName("Tutar ");
+               .HasColumnName("Tutar");
 
             Property(u => u.HizmetKomisyonu)
-               .HasColumnName("Hizmet Komisyonu ");
+               .HasColumnName("HizmetKomisyonu ");
 
             Property(u => u.PuanKomisyonu)
-               .HasColumnName("Puan Komisyonu");
+               .HasColumnName("PuanKomisyonu");
 
             Property(u => u.VadeKomisyonu)
-               .HasColumnName("Vade Komisyonu ");
+               .HasColumnName("VadeKomisyonu ");
 
             Property(u => u.DigerKomisyon)
-               .HasColumnName("Diger Komisyon ");
+               .HasColumnName("DigerKomisyon ");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-               .IsRequired()
-               .HasColumnName("Row ID");
+            
 
         }
     }

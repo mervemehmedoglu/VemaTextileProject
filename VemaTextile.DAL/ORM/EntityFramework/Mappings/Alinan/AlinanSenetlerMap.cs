@@ -14,11 +14,10 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
     {
         public AlinanSenetlerMap()
         {
-            ToTable("Alinan Senetler Tablosu");
+            ToTable("AlinanSenetlerTablosu");
 
 
-            Property(u => u.EvrakNo)
-                .HasColumnName("Evrak No");
+            
 
             Property(u => u.Seri)
                 .IsUnicode()
@@ -37,34 +36,34 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.BorcluUnvan)
                 .IsUnicode()
                 .HasMaxLength(50)
-                .HasColumnName("Borclu Unvan");
+                .HasColumnName("BorcluUnvan");
 
             Property(u => u.AlimTarihi)
-               .HasColumnName("Alim Tarihi");
+               .HasColumnName("AlimTarihi");
 
             Property(u => u.SenediVeren)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Senedi Veren");
+               .HasColumnName("SenediVeren");
 
             Property(u => u.SenediVerenUnvan)
                .IsUnicode()
                .HasMaxLength(50)
-               .HasColumnName("Senedi Veren Unvan");
+               .HasColumnName("SenediVerenUnvan");
 
             Property(u => u.Tutar)
                .HasColumnName("Tutar");
 
             Property(u => u.TahsilMasrafi)
-               .HasColumnName("Tahsil Masrafi");
+               .HasColumnName("TahsilMasrafi");
 
             Property(u => u.SenetTipi)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Senet Tipi");
+               .HasColumnName("SenetTipi");
 
             Property(u => u.VadeTarihi)
-               .HasColumnName("Vade Tarihi");
+               .HasColumnName("VadeTarihi");
 
             Property(u => u.Sehir)
                .IsUnicode()
@@ -94,13 +93,13 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.DovizCinsi)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Doviz Cinsi");
+               .HasColumnName("DovizCinsi");
 
             Property(u => u.DovizKuru)
-               .HasColumnName("Borclu Unvan");
+               .HasColumnName("BorcluUnvan");
 
             Property(u => u.DovizTutar)
-               .HasColumnName("Doviz Tutar");
+               .HasColumnName("DovizTutar");
 
             Property(u => u.Banka)
                .IsUnicode()
@@ -115,17 +114,17 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.BankaHesapNo)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Banka Hesap No");
+               .HasColumnName("BankaHesapNo");
 
             Property(u => u.SenetNo)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Senet No");
+               .HasColumnName("SenetNo");
 
             Property(u => u.TahsileCikilanBanka)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Tahsile Cikilan Banka");
+               .HasColumnName("TahsileCikilanBanka");
 
             Property(u => u.TahsileCikilanBankaUnvan)
                .IsUnicode()
@@ -135,7 +134,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.İslemTipi)
                .IsUnicode()
                .HasMaxLength(40)
-               .HasColumnName("İslem Tipi");
+               .HasColumnName("İslemTipi");
 
             Property(u => u.Tarih)  
                .HasColumnName("Tarih");
@@ -143,16 +142,16 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.SonPozisyon)
                .IsUnicode()
                .HasMaxLength(40)
-               .HasColumnName("Son Pozisyon");
+               .HasColumnName("SonPozisyon");
 
             Property(u => u.BordroNo)
                .IsUnicode()
                .HasMaxLength(8)
-               .HasColumnName("Bordro No");
+               .HasColumnName("BordroNo");
 
             HasKey(x => x.BordroIdNo);
             Property(x => x. BordroIdNo)              
-               .HasColumnName("Bordro Seri");
+               .HasColumnName("BordroSeri");
 
             Property(u => u.Aciklama)
                .IsUnicode()
@@ -161,17 +160,17 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
 
             HasKey(x => x.IDSenet);
             Property(x => x.IDSenet)
-               .HasColumnName("Borclu Unvan");
+               .HasColumnName("BorcluUnvan");
 
             Property(u => u.HesapKodu)
                .IsUnicode()
                .HasMaxLength(20)
-               .HasColumnName("Hesap Kodu");
+               .HasColumnName("HesapKodu");
 
             Property(u => u.HesapAdi)
                .IsUnicode()
                .HasMaxLength(50)
-               .HasColumnName("Hesap Adi");
+               .HasColumnName("HesapAdi");
 
             Property(u => u.Kaydeden)
                .IsUnicode()
@@ -179,7 +178,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
                .HasColumnName("Kaydeden");
 
             Property(u => u.KayitTarihi)
-               .HasColumnName("Kayit Tarihi");
+               .HasColumnName("KayitTarihi");
 
             Property(u => u.Degistiren)
                .IsUnicode()
@@ -187,11 +186,9 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
                .HasColumnName("Degistiren");
 
             Property(u => u.DegisiklikTarihi)
-               .HasColumnName("Degisiklik Tarihi");
+               .HasColumnName("DegisiklikTarihi");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-               .HasColumnName("Row_ID");
+            
 
 
 

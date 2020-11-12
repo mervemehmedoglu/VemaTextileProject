@@ -14,18 +14,18 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
     {
         public GeriOdemePlaniMap()
         {
-            ToTable("Geri Odeme Plani Tablosu");
+            ToTable("GeriOdemePlaniTablosu");
 
 
             Property(u => u.HesapKodu)
                 .IsRequired()
                 .HasMaxLength(50)
-                .HasColumnName("Hesap Kodu");
+                .HasColumnName("HesapKodu");
 
             Property(u => u.HesapAdi)
                .IsRequired()
                .HasMaxLength(50)
-               .HasColumnName("Hesap Adi");
+               .HasColumnName("HesapAdi");
 
             Property(u => u.Aciklama)
                .IsOptional()
@@ -47,28 +47,25 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
 
             Property(u => u.SabitGun)
                .IsOptional()
-               .HasColumnName("Sabit Gun");
+               .HasColumnName("SabitGun");
 
             Property(u => u.HizmetKomisyonu)
                .IsOptional()
-               .HasColumnName("Hizmet Komisyonu");
+               .HasColumnName("HizmetKomisyonu");
 
             Property(u => u.PuanKomisyonu)
                .IsOptional()
-               .HasColumnName("Puan Komisyonu");
+               .HasColumnName("PuanKomisyonu");
 
             Property(u => u.VadeKomisyonu)
                .IsOptional()
-               .HasColumnName("Vade Komisyonu");
+               .HasColumnName("VadeKomisyonu");
 
             Property(u => u.DigerKomisyon)
                .IsOptional()
-               .HasColumnName("Diger Komisyonu");
+               .HasColumnName("DigerKomisyonu");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-               .IsRequired()
-               .HasColumnName("Hesap Adi");
+            
 
         }
     }

@@ -11,8 +11,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CariHesap
     {
         public CariHesapİslemleriMap()
         {
-            ToTable("Cari Hesap İslemleri Tablosu");
-
+            ToTable("CariHesapIslemleriTablosu");
 
             Property(u => u.EvrakNo)
                 .IsRequired()
@@ -28,7 +27,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CariHesap
 
             Property(u => u.IdNo)
                .IsOptional()
-               .HasColumnName("Id No");
+               .HasColumnName("IdNo");
 
             Property(u => u.Tarih)
                .IsOptional()
@@ -36,44 +35,44 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CariHesap
 
             Property(u => u.OpsiyonGunu)
                .IsOptional()
-               .HasColumnName("Opsiyon Gunu");
+               .HasColumnName("OpsiyonGunu");
 
             Property(u => u.VadeTarihi)
                .IsOptional()
-               .HasColumnName("Vade Tarihi");
+               .HasColumnName("VadeTarihi");
 
             Property(u => u.IslemTuru)
                 .IsRequired()
                .IsOptional()
                .IsUnicode()
                 .HasMaxLength(4)
-               .HasColumnName("Islem Turu");
+               .HasColumnName("IslemTuru");
 
             Property(u => u.KaynakEvrakTipi)
                 .IsRequired()
                .IsOptional()
                .IsUnicode()
                 .HasMaxLength(4)
-               .HasColumnName("Kaynak Evrak Tipi");
+               .HasColumnName("KaynakEvrakTipi");
 
 
             Property(u => u.HesapKodu)
                 .IsRequired()
                .IsOptional()
                .IsUnicode()
-               .HasColumnName("Hesap Kodu");
+               .HasColumnName("HesapKodu");
 
             Property(u => u.HesapAdi)
               .IsRequired()
              .IsOptional()
              .IsUnicode()
-             .HasColumnName("Hesap Adi");
+             .HasColumnName("HesapAdi");
 
             Property(u => u.DovizTL)
                .IsOptional()
                .IsUnicode()
                 .HasMaxLength(5)
-               .HasColumnName("Doviz TL");
+               .HasColumnName("DovizTL");
 
             Property(u => u.Tutar)
               .HasColumnName("Tutar");
@@ -82,47 +81,47 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CariHesap
             Property(u => u.DovizCinsi)
                .IsUnicode()
                 .HasMaxLength(5)
-               .HasColumnName("Doviz Cinsi");
+               .HasColumnName("DovizCinsi");
 
             Property(u => u.DovizKuru)
-             .HasColumnName("Doviz Kuru");
+             .HasColumnName("DovizKuru");
 
             Property(u => u.DovizTutar)
-             .HasColumnName("Doviz Tutar");
+             .HasColumnName("DovizTutar");
 
             Property(u => u.KDVTutar)
-             .HasColumnName("Kdv Tutar");
+             .HasColumnName("KdvTutar");
 
             Property(u => u.OTVTutar)
-             .HasColumnName("Otv Tutar");
+             .HasColumnName("OtvTutar");
 
             Property(u => u.IskontoTutar)
-             .HasColumnName("Iskonto Tutar");
+             .HasColumnName("IskontoTutar");
 
             Property(u => u.DovizCinsi)
               .IsUnicode()
                .HasMaxLength(5)
-              .HasColumnName("Doviz Cinsi");
+              .HasColumnName("DovizCinsi");
 
             Property(u => u.PesinVadeli)
              .IsUnicode()
               .HasMaxLength(20)
-             .HasColumnName("Peşin Vadeli");
+             .HasColumnName("PeşinVadeli");
 
             Property(u => u.KarsiHesapKodu)
             .IsUnicode()
              .HasMaxLength(20)
-            .HasColumnName("Karsi Hesap Kodu");
+            .HasColumnName("KarsiHesapKodu");
 
             Property(u => u.KarsiHesapAdi)
             .IsUnicode()
              .HasMaxLength(50)
-            .HasColumnName("Karsi Hesap Adi");
+            .HasColumnName("KarsiHesapAdi");
 
             Property(u => u.BakiyeEtkisi)
             .IsUnicode()
              .HasMaxLength(3)
-            .HasColumnName("Bakiye Etkisi");
+            .HasColumnName("BakiyeEtkisi");
 
             Property(u => u.Kod1)
             .IsUnicode()
@@ -166,19 +165,17 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CariHesap
             .HasColumnName("Degistiren");
 
             Property(u => u.KayitTarihi)
-            .HasColumnName("Kayit Tarihi");
+            .HasColumnName("KayitTarihi");
 
             Property(u => u.DegisiklikTarihi)
-            .HasColumnName("Degisiklik Tarihi");
+            .HasColumnName("DegisiklikTarihi");
 
             Property(u => u.IDHesapKodu)
                 .IsUnicode()
              .HasMaxLength(20)
-            .HasColumnName("ID Hesap Kodu");
+            .HasColumnName("IDHesapKodu");
 
-            Property(u => u.Row_ID)
-            .IsRequired()
-           .HasColumnName("ID Hesap Kodu");
+            
         }
 
 

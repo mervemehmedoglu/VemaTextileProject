@@ -13,12 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
     {
         public FaturaBilgiMap()
         {
-            ToTable("Fatura Bilgi Tablosu");
-
-            
-            Property(u => u.EvrakNo)
-                .IsRequired()
-                .HasColumnName("Evrak No");
+            ToTable("FaturaBilgiTablosu");
 
             Property(u => u.Tarih)
                 .IsOptional()
@@ -26,16 +21,16 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
 
             Property(u => u.CHKKodu)
                 .IsOptional()
-               .HasColumnName("CHK Kodu");
+               .HasColumnName("CHKKodu");
 
             Property(u => u.CHKAdi)
                 .IsOptional()
-               .HasColumnName("CHK Adi");
+               .HasColumnName("CHKAdi");
 
             Property(u => u.Tıp)
                 .IsRequired()
                 .HasMaxLength(30)
-               .HasColumnName("Tarih");
+               .HasColumnName("Tıp");
 
             Property(u => u.Tutar)
                 .IsOptional()
@@ -48,20 +43,20 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
             Property(u => u.DovizTL)
                 .IsOptional()
                 .HasMaxLength(10)
-               .HasColumnName("Doviz TL");
+               .HasColumnName("DovizTL");
 
             Property(u => u.DovizCinsi)
                 .IsOptional()
                 .HasMaxLength(20)
-               .HasColumnName("Doviz Cinsi");
+               .HasColumnName("DovizCinsi");
 
             Property(u => u.DovizKuru)
                 .IsOptional() 
-               .HasColumnName("Doviz Kuru");
+               .HasColumnName("DovizKuru");
 
             Property(u => u.DovizTutar)
                 .IsOptional()
-               .HasColumnName("Doviz Tutar");
+               .HasColumnName("DovizTutar");
 
             Property(u => u.Kod1)
                 .IsOptional()
@@ -89,17 +84,17 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
             Property(u => u.TeslimAdres1)
               .IsOptional()
               .HasMaxLength(50)
-             .HasColumnName("Teslim Adresi1");
+             .HasColumnName("TeslimAdresi1");
 
             Property(u => u.TeslimAdres2)
               .IsOptional()
               .HasMaxLength(50)
-             .HasColumnName("Teslim Adresi2");
+             .HasColumnName("TeslimAdresi2");
 
             Property(u => u.TeslimAdres3)
               .IsOptional()
               .HasMaxLength(50)
-             .HasColumnName("Teslim Adresi3");
+             .HasColumnName("TeslimAdresi3");
 
             Property(u => u.Aciklama1)
               .IsOptional()
@@ -114,17 +109,14 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
             Property(u => u.KDVHesaplama)
               .IsOptional()
               .HasMaxLength(10)
-             .HasColumnName("KDV Hesaplama");
+             .HasColumnName("KDVHesaplama");
 
             Property(u => u.KaynakEvrakTipi)
               .IsRequired()
               .HasMaxLength(50)
-             .HasColumnName("Kaynak Evrak Tipi");
+             .HasColumnName("KaynakEvrakTipi");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-                .IsRequired()
-                .HasColumnName("Row ID");
+            
         }
     }
 }

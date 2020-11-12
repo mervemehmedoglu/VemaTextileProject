@@ -13,7 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.EylemveGorev
     {
         public EylemVeGorevlerMap()
         {
-            ToTable("Eylem ve Gorevler Tablosu");
+            ToTable("EylemveGorevlerTablosu");
 
             HasKey(x => x.Id);
             Property(x => x.Id)
@@ -23,32 +23,32 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.EylemveGorev
             Property(u => u.ChkKodu)
                 .IsRequired()
                 .HasMaxLength(20)
-                .HasColumnName("Chk Kodu");
+                .HasColumnName("ChkKodu");
 
             Property(u => u.ChkAdi)
                 .IsRequired()
                 .HasMaxLength(40)
-                .HasColumnName("Chk Adi");
+                .HasColumnName("ChkAdi");
 
             Property(u => u.EylemGorev)
                 .IsRequired()
                 .HasMaxLength(5)
-                .HasColumnName("Chk Kodu");
+                .HasColumnName("EylemGorevKodu");
 
             Property(u => u.EylemGorevTipi)
                 .IsOptional()
                 .HasMaxLength(40)
-                .HasColumnName("Eylem Gorev Tipi");
+                .HasColumnName("EylemGorevTipi");
 
             Property(u => u.TamamlanmaDurumu)
                 .IsOptional()
                 .HasMaxLength(5)
-                .HasColumnName("Tamamlanma Durumu");
+                .HasColumnName("TamamlanmaDurumu");
 
             Property(u => u.IlgiliKisi)
                 .IsOptional()
                 .HasMaxLength(40)
-                .HasColumnName("Ilgili Kisi");
+                .HasColumnName("IlgiliKisi");
 
             Property(u => u.Kaydeden)
                 .IsRequired()
@@ -61,15 +61,15 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.EylemveGorev
 
             Property(u => u.GorevTamamlamaTarihi)
                 .IsOptional()
-                .HasColumnName("Gorev Tamamlama Tarihi");
+                .HasColumnName("GorevTamamlamaTarihi");
 
             Property(u => u.BitisTarihi)
                 .IsOptional()
-                .HasColumnName("Bitis Tarihi");
+                .HasColumnName("BitisTarihi");
 
             Property(u => u.KayitTarihi)
                 .IsOptional()
-                .HasColumnName("Kayit Tarihi");
+                .HasColumnName("KayitTarihi");
 
             Property(u => u.Aciklama)
                 .IsOptional()
