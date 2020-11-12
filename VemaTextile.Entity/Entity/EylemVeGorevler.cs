@@ -11,23 +11,22 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public  decimal Id { get; set; }
+        public int ID { get; set; }
 
-        [Key]
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string ChkKodu { get; set; }
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
         public string ChkAdi { get; set; }
 
 
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
@@ -46,13 +45,13 @@ namespace VemaTextile.Models.Class
         [StringLength(40)]
         public string IlgiliKisi { get; set; }
         
-        [Key]
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kaydeden { get; set; }
 
-        [Key]
+        
         public DateTime Tarih { get; set; }
         public DateTime GorevTamamlamaTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }

@@ -8,9 +8,15 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Aciklama
     {
         public AciklamaMap()
         {
-            ToTable("Aciklama Tablosu");
+            ToTable("AciklamaTablosu");
 
-            HasKey(x => x.Parametre1);
+
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .HasColumnName("ID");
+
+
+
             Property(x => x.Parametre1)
                 .HasColumnName("Parametre1");
 

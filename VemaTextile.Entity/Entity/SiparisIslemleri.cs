@@ -9,7 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class SiparisIslemleri
     {
-        
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -35,7 +37,7 @@ namespace VemaTextile.Models.Class
         public DateTime SevkTarihi { get; set; }
 
         
-        [Required]
+        
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
@@ -45,22 +47,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string Seri { get; set; }
-
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public string IdNo { get; set; }
-
-        
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
-        public string IDTeklif { get; set; }
-
-        
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
-        public string SiparisNo { get; set; }
 
         
         [Required]
@@ -75,15 +61,10 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IslemTuru { get; set; }
 
-
-        
-        [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string CHKKodu { get; set; }
 
-
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

@@ -9,6 +9,10 @@ namespace VemaTextile.Models.Class
 {
     public class GeriOdemePlani
     {
+        [Key]
+        [Required]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "varchar")]
         [StringLength(50)]
@@ -41,10 +45,7 @@ namespace VemaTextile.Models.Class
         public decimal VadeKomisyonu { get; set; }
         [Column(TypeName = "decimal(18,0)")]
         public decimal DigerKomisyon { get; set; }
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
 
     }
 }

@@ -9,6 +9,8 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutPrimTakibi
     {
+        [Key]
+        public int ID { get; set; }
         public DateTime Tarih { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -65,9 +67,6 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string PrimAlinmaDurumu { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
 
 
 

@@ -9,7 +9,10 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutProjeTakibi
     {
-        
+
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         public DateTime Tarih { get; set; }
 
@@ -26,10 +29,7 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
+       
 
         
         [Required]
@@ -329,9 +329,6 @@ namespace VemaTextile.Models.Class
         public string IadelerEvrakNo { get; set; }
 
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
     }
 }

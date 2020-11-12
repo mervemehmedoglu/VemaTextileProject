@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class MuhasebeIsletme
     {
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -110,9 +113,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string IDIsletmeKodu { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
     }
 }

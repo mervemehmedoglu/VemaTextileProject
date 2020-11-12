@@ -10,6 +10,10 @@ namespace VemaTextile.Models.Class
     public class AciklamaTanimlar
     {
         [Key]
+        
+        public int ID { get; set; }
+
+        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

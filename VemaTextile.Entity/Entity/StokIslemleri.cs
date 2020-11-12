@@ -9,8 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class StokIslemleri
     {
+        [Key]
+        public int ID { get; set; }
         [Required]
-
         [Column(TypeName = "nvarchar")]
         public string MalKodu { get; set; }
 
@@ -43,10 +44,7 @@ namespace VemaTextile.Models.Class
         [StringLength(4)]
         public string Seri { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
+       
 
         [Column(TypeName = "nvarchar")]
         [StringLength(4)]
@@ -217,13 +215,6 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDMalKodu { get; set; }
-
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
     }
 }

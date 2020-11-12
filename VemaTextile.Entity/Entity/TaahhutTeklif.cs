@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutTeklif
     {
+        [Key]
+        public int ID { get; set; }
+
         public DateTime Tarih { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -239,8 +242,7 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
 
     }
 }

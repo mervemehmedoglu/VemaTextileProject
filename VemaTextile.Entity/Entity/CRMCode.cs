@@ -11,13 +11,9 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Id { get; set; }
+        public int ID { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(10,0)")]
-        public decimal KategoriId { get; set; }
+        
   
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
@@ -33,9 +29,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(10,0)")]
         public decimal SiraNo { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
     }
 }

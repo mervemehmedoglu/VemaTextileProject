@@ -10,16 +10,9 @@ namespace VemaTextile.Models.Class
     public class ProjeGorevAciklama
     {
         [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string ID { get; set; }
+        public int ID { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string GorevID { get; set; }
+        
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -31,10 +24,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "text")]
         public string Aciklama { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
 
 
     }

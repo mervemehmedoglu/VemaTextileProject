@@ -9,11 +9,15 @@ namespace VemaTextile.Models.Class
 {
     public class SonEvrakNotlar
     {
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kaydeden { get; set; }
 
+        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -30,14 +34,6 @@ namespace VemaTextile.Models.Class
         [StringLength(4)]
         public string Seri { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
-
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
     }
 }

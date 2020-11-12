@@ -10,14 +10,16 @@ namespace VemaTextile.Models.Class
     public class AlinanCekler
     {
         [Key]
-        [Column(TypeName = "decimal(18,0)")]
+        public int ID { get; set; }
+
+        [Column(TypeName = "decimal")]
         public decimal EvrakNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -28,7 +30,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string BorcluUnvan { get; set; }
 
-        
         public DateTime AlimTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -44,8 +45,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string CekTipi { get; set; }
-       
-        [Key]
         [Required]
         public DateTime VadeTarihi { get; set; }
         [Column(TypeName = "nvarchar")]
@@ -65,11 +64,11 @@ namespace VemaTextile.Models.Class
         public string DovizTL { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public decimal DovizCinsi { get; set; }
+        public string DovizCinsi { get; set; }
         [Column(TypeName = "money")]
         public decimal DovizKuru { get; set; }
         [Column(TypeName = "money")]
-        public string DovizTutar { get; set; }
+        public decimal DovizTutar { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Banka { get; set; }
@@ -104,13 +103,13 @@ namespace VemaTextile.Models.Class
         public string BordroSeri { get; set; }
         
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal BordroIdNo { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Aciklama { get; set; }
         [Key]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IDCek { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -129,8 +128,7 @@ namespace VemaTextile.Models.Class
         public DateTime DegisiklikTarihi { get; set; }
         
 
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
 
 
 

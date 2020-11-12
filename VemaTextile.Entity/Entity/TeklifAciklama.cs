@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class TeklifAciklama
     {
+        [Key]
+        public int ID { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
@@ -34,8 +37,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(18,0)")]
         public decimal SiraNo { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
     }
 }

@@ -9,7 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class TeklifIslemleri
     {
-        
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -47,10 +49,7 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -174,10 +173,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "money")]
         public decimal MasrafTutar { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(19,4)")]
-        public decimal IDTeklif { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -229,9 +225,5 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IDMalKodu { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
     }
 }

@@ -10,6 +10,8 @@ namespace VemaTextile.Models.Class
     public class UstaKartlari
     {
         [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -41,11 +43,7 @@ namespace VemaTextile.Models.Class
         public DateTime DegisiklikTarihi { get; set; }
         public DateTime DegisiklikSaati { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal RowID { get; set; }
-
+        
 
 
 
