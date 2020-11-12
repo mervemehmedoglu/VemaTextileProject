@@ -9,6 +9,10 @@ namespace VemaTextile.Models.Class
 {
     public class CariHesapİslemleri
     {
+
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(57)]
@@ -19,9 +23,7 @@ namespace VemaTextile.Models.Class
         [StringLength(4)]
         public string  Seri { get; set; }
        
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
+        
        
         public DateTime Tarih { get; set; }
         
@@ -130,9 +132,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IDHesapKodu{ get; set; }
         
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID{ get; set; }
+        
 
        
 

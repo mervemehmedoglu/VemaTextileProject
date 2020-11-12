@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class StokKartlari
     {
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         public string MalKodu { get; set; }

@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class ProjeKaynaklar
     {
+        [Key]
+        public int ID { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Tıp { get; set; }
@@ -51,22 +54,14 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(19,2)")]
         public decimal Hakedis { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string GorevID { get; set; }
+        
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string GorevAdi { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDHesapKodu { get; set; }
+        
 
         
         [Column(TypeName = "nvarchar")]
@@ -90,10 +85,7 @@ namespace VemaTextile.Models.Class
         public DateTime DegisiklikTarihi { get; set; }
         public DateTime DegisiklikSaati { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
 
 
 

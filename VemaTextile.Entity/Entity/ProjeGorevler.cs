@@ -9,24 +9,17 @@ namespace VemaTextile.Models.Class
 {
     public class ProjeGorevler
     {
-        
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string GörevID { get; set; }
+       
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string ID { get; set; }
-
+       
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -66,11 +59,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Onculler { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string SablonID{ get; set; }
+       
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -112,10 +101,7 @@ namespace VemaTextile.Models.Class
         [StringLength(10)]
         public string Onem { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
 
 
     }

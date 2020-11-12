@@ -9,7 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutMDetay
     {
-       
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -173,11 +175,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string SeriNo { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDSiparis { get; set; }
+       
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -220,10 +218,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IDMalKodu { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
 
     }
 }

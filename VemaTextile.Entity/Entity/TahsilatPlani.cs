@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class TahsilatPlani
     {
+        [Key]
+        public int ID { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string HesapKodu { get; set; }
@@ -31,14 +34,13 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
+      
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string OdemeTipi { get; set; }
 
-        [Key]
+        
         [Required]
         public DateTime OdemeTarihi { get; set; }
 
@@ -69,10 +71,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "decimal(18,0)")]
         public decimal IDOdeme { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
 
     }
 }

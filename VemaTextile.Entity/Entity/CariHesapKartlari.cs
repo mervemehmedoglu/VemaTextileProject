@@ -11,6 +11,9 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         [Required]
+        public int ID { get; set; }
+        
+        [Required]
         public int HesapKodu { get; set; }
         [Required]
         public string HesapAdi { get; set; }
@@ -196,8 +199,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
         public string DegisiklikKaynak { get; set; }    
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal RowID { get; set; }
+       
 
     }
 }

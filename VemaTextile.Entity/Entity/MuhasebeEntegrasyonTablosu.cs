@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class MuhasebeEntegrasyonTablosu
     {
+        [Key]
+        public int ID { get; set; }
+
         [Column(TypeName = "decimal(18,0)")]
         public decimal RowNumber { get; set; }
 
@@ -77,8 +80,6 @@ namespace VemaTextile.Models.Class
         [StringLength(10)]
         public string FisTipi { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+        
     }
 }

@@ -9,6 +9,8 @@ namespace VemaTextile.Models.Class
 {
     public class TaahhutIsTakibi
     {
+        [Key]
+        public int ID { get; set; }
 
         public DateTime Tarih { get; set; }
 
@@ -20,8 +22,7 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -420,8 +421,6 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
+       
     }
 }

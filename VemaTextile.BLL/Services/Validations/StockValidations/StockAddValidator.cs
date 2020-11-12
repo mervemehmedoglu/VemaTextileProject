@@ -19,8 +19,8 @@ namespace VemaTextile.BLL.Services.Validations.StockValidations
             _unitOfWork = unitOfWork;
 
             RuleFor(x => x.UreticiUnvan)
-                .NotNull().WithMessage("Üreteci Ünvanı Boş Geçilemez...")
-                .
+                .NotNull().WithMessage("Üreteci Ünvanı Boş Geçilemez...");
+                
         }
 
 }

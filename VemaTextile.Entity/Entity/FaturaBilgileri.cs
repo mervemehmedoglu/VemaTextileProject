@@ -12,7 +12,7 @@ namespace VemaTextile.Models.Class
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(57)]
-        public string EvrakNO { get; set; }
+        public string EvrakNo { get; set; }
 
         public DateTime Tarih { get; set; }
 
@@ -60,10 +60,10 @@ namespace VemaTextile.Models.Class
         public string Kod3 { get; set; }
 
         [Column(TypeName = "money")]
-        public string Kod4 { get; set; }
+        public decimal Kod4 { get; set; }
 
         [Column(TypeName = "money")]
-        public string Kod5 { get; set; }
+        public decimal Kod5 { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
