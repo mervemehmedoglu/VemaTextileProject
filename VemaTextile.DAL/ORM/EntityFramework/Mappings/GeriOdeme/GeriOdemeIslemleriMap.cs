@@ -16,45 +16,28 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
         {
             ToTable("GeriOdemeIslemleriTablosu");
 
+            HasKey(x => x.ID);
 
             Property(u => u.HesapKodu)
-                .IsRequired()
-                .HasMaxLength(20)
-                .HasColumnName("HesapKodu");
+                .IsUnicode()
+                .HasMaxLength(20);
 
             Property(u => u.BankaHesapKodu)
                .IsRequired()
-               .HasMaxLength(20)
-               .HasColumnName("BankaHesapKodu");
+               .HasMaxLength(20);
 
             Property(u => u.EvrakNo)
                .IsRequired()
-               .HasMaxLength(8)
-               .HasColumnName("EvrakNo");
+               .HasMaxLength(8);
 
             Property(u => u.TahsilatTipi)
                .IsRequired()
-               .HasMaxLength(20)
-               .HasColumnName("TahsilatTipi");
+               .HasMaxLength(20);
+
 
             Property(u => u.VadeTarihi)
-               .IsRequired()
-               .HasColumnName("VadeTarihi ");
+               .IsRequired();
 
-            Property(u => u.Tutar)
-               .HasColumnName("Tutar");
-
-            Property(u => u.HizmetKomisyonu)
-               .HasColumnName("HizmetKomisyonu ");
-
-            Property(u => u.PuanKomisyonu)
-               .HasColumnName("PuanKomisyonu");
-
-            Property(u => u.VadeKomisyonu)
-               .HasColumnName("VadeKomisyonu ");
-
-            Property(u => u.DigerKomisyon)
-               .HasColumnName("DigerKomisyon ");
 
             
 

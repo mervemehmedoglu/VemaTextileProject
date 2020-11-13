@@ -15,65 +15,41 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.EylemveGorev
         {
             ToTable("EylemveGorevlerTablosu");
 
-            HasKey(x => x.Id);
-            Property(x => x.Id)
-                .IsRequired()
-                .HasColumnName("Id");
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
 
-            Property(u => u.ChkKodu)
-                .IsRequired()
-                .HasMaxLength(20)
-                .HasColumnName("ChkKodu");
+            Property(u => u.CHKKodu)
+                .HasMaxLength(20);
+
 
             Property(u => u.ChkAdi)
                 .IsRequired()
-                .HasMaxLength(40)
-                .HasColumnName("ChkAdi");
+                .HasMaxLength(40);
+
 
             Property(u => u.EylemGorev)
                 .IsRequired()
-                .HasMaxLength(5)
-                .HasColumnName("EylemGorevKodu");
+                .HasMaxLength(5);
+
 
             Property(u => u.EylemGorevTipi)
                 .IsOptional()
-                .HasMaxLength(40)
-                .HasColumnName("EylemGorevTipi");
+                .HasMaxLength(40);
+
 
             Property(u => u.TamamlanmaDurumu)
                 .IsOptional()
-                .HasMaxLength(5)
-                .HasColumnName("TamamlanmaDurumu");
+                .HasMaxLength(5);
 
             Property(u => u.IlgiliKisi)
                 .IsOptional()
-                .HasMaxLength(40)
-                .HasColumnName("IlgiliKisi");
+                .HasMaxLength(40);
+
 
             Property(u => u.Kaydeden)
                 .IsRequired()
-                .HasMaxLength(20)
-                .HasColumnName("Kaydeden");
-
-            Property(u => u.Tarih)
-                .IsOptional()
-                .HasColumnName("Tarih");
-
-            Property(u => u.GorevTamamlamaTarihi)
-                .IsOptional()
-                .HasColumnName("GorevTamamlamaTarihi");
-
-            Property(u => u.BitisTarihi)
-                .IsOptional()
-                .HasColumnName("BitisTarihi");
-
-            Property(u => u.KayitTarihi)
-                .IsOptional()
-                .HasColumnName("KayitTarihi");
-
-            Property(u => u.Aciklama)
-                .IsOptional()
-                .HasColumnName("Aciklama");
+                .HasMaxLength(20);
 
         }
     }

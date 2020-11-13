@@ -29,14 +29,6 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-       
-
-        
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
-        public string IDCHKKodu { get; set; }
-
         
         [Required]
         [Column(TypeName = "nvarchar")]
