@@ -22,7 +22,12 @@ namespace VemaTextile.Models.Class
 
 
         [Required]
+        [Column(TypeName = "nvarchar")]
+        [StringLength(50)]
         public string HesapAdi { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(50)]
         public string HesapAdi2 { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(15)] 

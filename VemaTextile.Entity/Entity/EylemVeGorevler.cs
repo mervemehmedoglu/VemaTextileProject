@@ -10,9 +10,9 @@ namespace VemaTextile.Models.Class
     public class EylemVeGorevler
     {
         [Key]
+        [Required]
         public int ID { get; set; }
 
-       
         public int IDCHKKodu { get; set; }
 
         [Column(TypeName = "nvarchar")]

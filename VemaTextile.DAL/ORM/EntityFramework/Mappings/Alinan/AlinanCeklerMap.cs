@@ -8,18 +8,27 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
     {
         public AlinanCeklerMap()
         {
-            ToTable("AlinanCekler");
+            ToTable("AlinanCeklerTablosu");
 
             HasKey(x => x.ID);
             Property(x => x.ID)
                 .IsRequired();
 
+            Property(u => u.IDCek)
+               .IsUnicode()
+               .HasMaxLength(40);
+
+            Property(u => u.HesapKodu)
+               .IsUnicode()
+               .HasMaxLength(20);
+
+            Property(u => u.HesapAdi)
+               .IsUnicode()
+               .HasMaxLength(50);
+
             Property(u => u.Seri)
-                .IsRequired()
                 .IsUnicode()
                 .HasMaxLength(2);
-
-
 
             Property(u => u.Borclu)
                .IsUnicode()
@@ -118,22 +127,9 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
 
             Property(u => u.BordroIdNo)
               .IsOptional();
-
-
             Property(u => u.Aciklama)
               .IsUnicode()
               .HasMaxLength(50);
-
-
-            Property(u => u.HesapKodu)
-              .IsUnicode()
-              .HasMaxLength(20);
-
-
-            Property(u => u.HesapAdi)
-              .IsUnicode()
-              .HasMaxLength(50);
-
 
             Property(u => u.Kaydeden)
               .IsUnicode()

@@ -27,117 +27,116 @@ namespace VemaTextile.Models.Class
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(57)]
-        public string EvrakNo{ get; set; }
-        
+        public string EvrakNo { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(4)]
-        public string  Seri { get; set; }
-       
+        public string Seri { get; set; }
+
         public DateTime Tarih { get; set; }
-        
+
         [Column(TypeName = "money")]
-        public decimal OpsiyonGunu{ get; set; }
-        
+        public decimal OpsiyonGunu { get; set; }
+
         public DateTime VadeTarihi { get; set; }
-       
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(6)]
         public string IslemTuru { get; set; }
-       
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(80)]
         public string KaynakEvrakTipi { get; set; }
-       
-        
+
+
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string DovizTL { get; set; }
-       
+
         [Column(TypeName = "money")]
         public decimal Tutar { get; set; }
-       
+
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string DovizCinsi { get; set; }
-        
+
         [Column(TypeName = "money")]
         public decimal DovizKuru { get; set; }
-        
+
         [Column(TypeName = "money")]
         public decimal DovizTutar { get; set; }
-        
+
         [Column(TypeName = "money")]
-        public decimal KDVTutar{ get; set; }
-        
+        public decimal KDVTutar { get; set; }
+
         [Column(TypeName = "money")]
-        public decimal OTVTutar{ get; set; }
-       
+        public decimal OTVTutar { get; set; }
+
         [Column(TypeName = "money")]
-        public decimal IskontoTutar{ get; set; }
-       
+        public decimal IskontoTutar { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string PesinVadeli{ get; set; }
-       
+        public string PesinVadeli { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string KarsiHesapKodu{ get; set; }
-        
+        public string KarsiHesapKodu { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
-        public string KarsiHesapAdi{ get; set; }
-        
+        public string KarsiHesapAdi { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(3)]
-        public string BakiyeEtkisi{ get; set; }
-        
+        public string BakiyeEtkisi { get; set; }
+
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string Kod1{ get; set; }
-       
+        public string Kod1 { get; set; }
+
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string Kod2{ get; set; }
-        
+        public string Kod2 { get; set; }
+
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string Kod3{ get; set; }
-        
+        public string Kod3 { get; set; }
+
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string Kod4{ get; set; }
-       
+        public string Kod4 { get; set; }
+
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string Kod5{ get; set; }
-       
+        public string Kod5 { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(100)]
-        public string Aciklama{ get; set; }
-       
+        public string Aciklama { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string Kaydeden{ get; set; }
-        
-        public DateTime KayitTarihi{ get; set; }
-        
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Degistiren{ get; set; }
-        public DateTime DegisiklikTarihi{ get; set; }
-        
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        
-        
-        
+        public string Kaydeden { get; set; }
 
-       
+        public DateTime KayitTarihi { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string Degistiren { get; set; }
+        public DateTime DegisiklikTarihi { get; set; }
+
+
+
+
+
 
 
     }
+
+    
 }

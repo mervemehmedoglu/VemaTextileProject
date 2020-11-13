@@ -10,7 +10,9 @@ namespace VemaTextile.Models.Class
     public class CRMCode
     {
         [Key]
+        [Required]
         public int ID { get; set; }
+        public int IDKategori { get; set; }
 
         public int IDHesapKodu { get; set; }
 

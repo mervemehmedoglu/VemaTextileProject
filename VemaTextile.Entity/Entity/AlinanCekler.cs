@@ -21,6 +21,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string HesapKodu { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string HesapAdi { get; set; }

@@ -15,106 +15,86 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
         {
             ToTable("FaturaBilgiTablosu");
 
-            Property(u => u.Tarih)
-                .IsOptional()
-                .HasColumnName("Tarih");
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
 
             Property(u => u.CHKKodu)
-                .IsOptional()
-               .HasColumnName("CHKKodu");
+                .IsUnicode()
+                .HasMaxLength(20);
 
             Property(u => u.CHKAdi)
-                .IsOptional()
-               .HasColumnName("CHKAdi");
+                .IsUnicode()
+                .HasMaxLength(20);
+
+            Property(u => u.EvrakNo)
+                .IsRequired()
+                .IsUnicode()
+                .HasMaxLength(20);
+
 
             Property(u => u.Tıp)
                 .IsRequired()
-                .HasMaxLength(30)
-               .HasColumnName("Tıp");
+                .IsUnicode()
+                .HasMaxLength(30);
 
-            Property(u => u.Tutar)
-                .IsOptional()
-               .HasColumnName("Tutar");
-
-            Property(u => u.Oran)
-                .IsOptional()
-               .HasColumnName("Oran");
 
             Property(u => u.DovizTL)
-                .IsOptional()
-                .HasMaxLength(10)
-               .HasColumnName("DovizTL");
+                .IsUnicode()
+                .HasMaxLength(10);
 
             Property(u => u.DovizCinsi)
-                .IsOptional()
-                .HasMaxLength(20)
-               .HasColumnName("DovizCinsi");
-
-            Property(u => u.DovizKuru)
-                .IsOptional() 
-               .HasColumnName("DovizKuru");
-
-            Property(u => u.DovizTutar)
-                .IsOptional()
-               .HasColumnName("DovizTutar");
+                .IsUnicode()
+                .HasMaxLength(20);
 
             Property(u => u.Kod1)
-                .IsOptional()
-                .HasMaxLength(20)
-               .HasColumnName("Kod1");
+                .IsUnicode()
+                .HasMaxLength(20);
+
 
             Property(u => u.Kod2)
-                .IsOptional()
-                .HasMaxLength(20)
-               .HasColumnName("kod2");
+                .IsUnicode()
+                .HasMaxLength(20);
 
             Property(u => u.Kod3)
-              .IsOptional()
-              .HasMaxLength(20)
-             .HasColumnName("Kod3");
+              .IsUnicode()
+              .HasMaxLength(20);
 
-            Property(u => u.Kod4)
-              .IsOptional()
-             .HasColumnName("Kod4");
 
-            Property(u => u.Kod5)
-              .IsOptional()
-             .HasColumnName("Kod5");
 
             Property(u => u.TeslimAdres1)
-              .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("TeslimAdresi1");
+              .IsUnicode()
+              .HasMaxLength(50);
+
 
             Property(u => u.TeslimAdres2)
-              .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("TeslimAdresi2");
+              .IsUnicode()
+              .HasMaxLength(50);
+
 
             Property(u => u.TeslimAdres3)
-              .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("TeslimAdresi3");
+              .IsUnicode()
+              .HasMaxLength(50);
+
 
             Property(u => u.Aciklama1)
-              .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Aciklama1");
+              .IsUnicode()
+              .HasMaxLength(50);
+
 
             Property(u => u.Aciklama2)
-              .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Aciklama2");
+                .IsUnicode()
+              .HasMaxLength(50);
+
 
             Property(u => u.KDVHesaplama)
-              .IsOptional()
-              .HasMaxLength(10)
-             .HasColumnName("KDVHesaplama");
+              .IsUnicode()
+              .HasMaxLength(10);
+
 
             Property(u => u.KaynakEvrakTipi)
               .IsRequired()
-              .HasMaxLength(50)
-             .HasColumnName("KaynakEvrakTipi");
+              .HasMaxLength(50);
 
             
         }

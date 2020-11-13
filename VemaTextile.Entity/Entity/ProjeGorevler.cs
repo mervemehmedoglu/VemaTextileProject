@@ -86,9 +86,7 @@ namespace VemaTextile.Models.Class
         [StringLength(1)]
         public string Okundu { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDCHKKodu { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
