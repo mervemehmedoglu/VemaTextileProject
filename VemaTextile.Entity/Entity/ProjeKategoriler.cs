@@ -17,10 +17,7 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(40)]
-        public string ParentID { get; set; }
+    
 
         [Required]
         [Column(TypeName = "nvarchar")]

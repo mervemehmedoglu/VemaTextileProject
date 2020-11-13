@@ -17,9 +17,6 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdNo { get; set; }
-
         [Column(TypeName = "nvarchar")]
         [StringLength(10)]
         public string FaturaTarihi { get; set; }

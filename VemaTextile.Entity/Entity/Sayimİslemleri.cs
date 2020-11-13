@@ -168,9 +168,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string SeriNo { get; set; }
         
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDSiparis { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

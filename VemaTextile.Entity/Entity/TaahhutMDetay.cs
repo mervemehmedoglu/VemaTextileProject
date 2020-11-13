@@ -47,10 +47,7 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal")]
-        public decimal IdNo { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -213,10 +210,7 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDMalKodu { get; set; }
+        
 
        
 

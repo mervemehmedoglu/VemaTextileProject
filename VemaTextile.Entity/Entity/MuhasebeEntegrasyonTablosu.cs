@@ -12,9 +12,6 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        [Column(TypeName = "decimal")]
-        public decimal RowNumber { get; set; }
-
         [Column(TypeName = "nvarchar")]
         [StringLength(100)]
         public string KaynakEvrakTipi { get; set; }

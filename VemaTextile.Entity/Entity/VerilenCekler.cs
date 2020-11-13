@@ -24,9 +24,6 @@ namespace VemaTextile.Models.Class
 
 
 
-        [Column(TypeName = "decimal")]
-        public decimal IdNo { get; set; }
-
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string BankaCH { get; set; }

@@ -20,9 +20,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string HesapAdi { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
-        public string IDHesapKodu { get; set; }
+        
 
         public DateTime Tarih { get; set; }
 

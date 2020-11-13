@@ -11,16 +11,12 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         public int ID { get; set; }
-
         public DateTime Tarih { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string Seri { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal")]
-        public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

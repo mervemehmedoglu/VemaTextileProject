@@ -52,6 +52,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IDUstaKodu { get; set; }
 
-       
+
     }
 }
