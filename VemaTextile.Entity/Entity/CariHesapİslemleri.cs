@@ -57,7 +57,7 @@ namespace VemaTextile.Models.Class
        
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
-        public int DovizCinsi { get; set; }
+        public string DovizCinsi { get; set; }
         
         [Column(TypeName = "money")]
         public decimal DovizKuru { get; set; }
@@ -80,7 +80,7 @@ namespace VemaTextile.Models.Class
        
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string KarsiHesapKOdu{ get; set; }
+        public string KarsiHesapKodu{ get; set; }
         
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

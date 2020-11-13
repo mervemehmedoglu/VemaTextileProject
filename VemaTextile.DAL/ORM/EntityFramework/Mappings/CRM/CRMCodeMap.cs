@@ -13,29 +13,35 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CRM
     {
         public CRMCodeMap()
         {
-            ToTable("CRMCode");
+            ToTable("CRMCodeTablosu");
 
-            HasKey(x => x.ID);
-            Property(x => x.ID)
-                .IsRequired();
+            HasKey(x => x.Id);
+            Property(x => x.Id)
+                .IsRequired()
+                .HasColumnName("Id");
+
+           
+            Property(x => x.KategoriId)
+                .IsRequired()
+                .HasColumnName("KategoriId");
 
             Property(u => u.Aciklama)
                 .IsOptional()
-                .HasMaxLength(40);
+                .HasMaxLength(40)
+                .HasColumnName("Aciklama");
 
-
-            Property(u => u.Aciklama2)
+            Property(u => u. Aciklama2)
                 .IsOptional()
-                .HasMaxLength(400);
+                .HasMaxLength(400)
+                .HasColumnName("Aciklama2");
 
             Property(u => u.KodTipi)
-               .IsOptional();
-
+               .IsOptional()
+               .HasColumnName("KodTipi");
 
             Property(u => u.SiraNo)
-               .IsOptional();
-           
-
+               .IsOptional()
+               .HasColumnName("SiraNo");
         }
     }
 }

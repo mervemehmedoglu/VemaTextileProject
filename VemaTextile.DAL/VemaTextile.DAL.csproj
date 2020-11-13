@@ -59,12 +59,14 @@
     <Compile Include="ORM\EntityFramework\Mappings\Aciklama\AciklamaMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Alinan\AlinanCeklerMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Alinan\AlinanSenetlerMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\CariHesap\CariHesapKartlari.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\CariHesap\CariHesapİslemleriMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\CRM\CRMCodeMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\EylemVeGorev\EylemVeGorevlerMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\FaturaBilgi\FaturaBilgileriMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\GeriOdeme\GeriOdemePlaniMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\GeriOdeme\GeriOdemeIslemleriMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\KarmaKoliler\KarmaKoliMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
