@@ -67,7 +67,7 @@
     <Compile Include="Entity\GeriOdemePlani.cs" />
     <Compile Include="Entity\KarmaKoli.cs" />
     <Compile Include="Entity\KarmaKoli2.cs" />
-    <Compile Include="Entity\Kod.cs" />
+    <Compile Include="Entity\KOD.cs" />
     <Compile Include="Entity\Kullanicilar.cs" />
     <Compile Include="Entity\MuhasebeEntegrasyonTablosu.cs" />
     <Compile Include="Entity\MuhasebeGrupKartlari.cs" />

@@ -21,13 +21,13 @@ namespace VemaTextile.Models.Class
         public string Sifre { get; set; }
      
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Kaydeden { get; set; }
 
         public DateTime KayitTarih { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Degistiren { get; set; }
 
         public DateTime DegisiklikTarihi { get; set; }

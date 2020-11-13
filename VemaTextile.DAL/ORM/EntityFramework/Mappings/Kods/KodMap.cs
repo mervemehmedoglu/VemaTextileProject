@@ -1,12 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity.ModelConfiguration;
+using VemaTextile.Entity.Entity;
+using VemaTextile.Models.Class;
+
 
 namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Kods
 {
-    class KodMap
+    public class KodMap : EntityTypeConfiguration<KOD>
     {
+        public KodMap()
+        {
+            ToTable("KodTablosu");
+
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
+
+
+            Property(u => u.IslemKodu)
+                .IsUnicode()
+                .HasMaxLength(20);
+
+            Property(u => u.Tıp)
+                .IsUnicode()
+                .HasMaxLength(20);
+
+
+            Property(u => u.Kod)
+               .IsUnicode()
+              .HasMaxLength(20);
+
+            Property(u => u.Aciklama)
+              .IsUnicode()
+             .HasMaxLength(30);
+        }
+
+
     }
 }
