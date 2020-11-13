@@ -14,58 +14,31 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
     {
         public GeriOdemePlaniMap()
         {
-            ToTable("Geri Odeme Plani Tablosu");
+            ToTable("GeriOdemePlani");
+
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
 
 
             Property(u => u.HesapKodu)
                 .IsRequired()
-                .HasMaxLength(50)
-                .HasColumnName("Hesap Kodu");
+                .HasMaxLength(50);
+
 
             Property(u => u.HesapAdi)
                .IsRequired()
-               .HasMaxLength(50)
-               .HasColumnName("Hesap Adi");
+               .HasMaxLength(50);
+
 
             Property(u => u.Aciklama)
                .IsOptional()
-               .HasMaxLength(50)
-               .HasColumnName("Aciklama");
+               .HasMaxLength(50);
+
 
             Property(u => u.Tip)
                .IsOptional()
-               .HasMaxLength(50)
-               .HasColumnName("Tip");
-
-            Property(u => u.Ay)
-               .IsOptional()
-               .HasColumnName("Ay");
-
-            Property(u => u.Gun)
-               .IsOptional()
-               .HasColumnName("Gun");
-
-            Property(u => u.SabitGun)
-               .IsOptional()
-               .HasColumnName("Sabit Gun");
-
-            Property(u => u.HizmetKomisyonu)
-               .IsOptional()
-               .HasColumnName("Hizmet Komisyonu");
-
-            Property(u => u.PuanKomisyonu)
-               .IsOptional()
-               .HasColumnName("Puan Komisyonu");
-
-            Property(u => u.VadeKomisyonu)
-               .IsOptional()
-               .HasColumnName("Vade Komisyonu");
-
-            Property(u => u.DigerKomisyon)
-               .IsOptional()
-               .HasColumnName("Diger Komisyonu");
-
-           
+               .HasMaxLength(50);
 
         }
     }

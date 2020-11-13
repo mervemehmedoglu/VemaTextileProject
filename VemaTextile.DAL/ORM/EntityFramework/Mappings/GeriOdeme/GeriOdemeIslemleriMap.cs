@@ -14,50 +14,34 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
     {
         public GeriOdemeIslemleriMap()
         {
-            ToTable("Geri Odeme Islemleri Tablosu");
+            ToTable("GeriOdemeIslemleri");
 
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
 
             Property(u => u.HesapKodu)
                 .IsRequired()
-                .HasMaxLength(20)
-                .HasColumnName("Hesap Kodu");
+                .HasMaxLength(20);
+
 
             Property(u => u.BankaHesapKodu)
                .IsRequired()
-               .HasMaxLength(20)
-               .HasColumnName("Banka Hesap Kodu");
+               .HasMaxLength(20);
+
 
             Property(u => u.EvrakNo)
                .IsRequired()
-               .HasMaxLength(8)
-               .HasColumnName("Evrak No");
+               .HasMaxLength(8);
+
 
             Property(u => u.TahsilatTipi)
                .IsRequired()
-               .HasMaxLength(20)
-               .HasColumnName("Tahsilat Tipi");
+               .HasMaxLength(20);
+
 
             Property(u => u.VadeTarihi)
-               .IsRequired()
-               .HasColumnName("Vade Tarihi ");
-
-            Property(u => u.Tutar)
-               .HasColumnName("Tutar ");
-
-            Property(u => u.HizmetKomisyonu)
-               .HasColumnName("Hizmet Komisyonu ");
-
-            Property(u => u.PuanKomisyonu)
-               .HasColumnName("Puan Komisyonu");
-
-            Property(u => u.VadeKomisyonu)
-               .HasColumnName("Vade Komisyonu ");
-
-            Property(u => u.DigerKomisyon)
-               .HasColumnName("Diger Komisyon ");
-
-            
-
+               .IsRequired();
         }
     }
 }

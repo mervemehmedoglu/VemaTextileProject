@@ -13,113 +13,105 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
     {
         public FaturaBilgiMap()
         {
-            ToTable("Fatura Bilgi Tablosu");
+            ToTable("FaturaBilgi");
 
-            
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
+
             Property(u => u.EvrakNo)
-                .IsRequired()
-                .HasColumnName("Evrak No");
-
-            Property(u => u.Tarih)
-                .IsOptional()
-                .HasColumnName("Tarih");
-
-            Property(u => u.CHKKodu)
-                .IsOptional()
-               .HasColumnName("CHK Kodu");
+                .IsRequired();
 
             Property(u => u.CHKAdi)
-                .IsOptional()
-               .HasColumnName("CHK Adi");
+                .IsOptional();
 
             Property(u => u.Tıp)
                 .IsRequired()
-                .HasMaxLength(30)
-               .HasColumnName("Tarih");
+                .HasMaxLength(30);
+
 
             Property(u => u.Tutar)
-                .IsOptional()
-               .HasColumnName("Tutar");
+                .IsOptional();
+
 
             Property(u => u.Oran)
-                .IsOptional()
-               .HasColumnName("Oran");
+                .IsOptional();
+
 
             Property(u => u.DovizTL)
                 .IsOptional()
-                .HasMaxLength(10)
-               .HasColumnName("Doviz TL");
+                .HasMaxLength(10);
+
 
             Property(u => u.DovizCinsi)
                 .IsOptional()
-                .HasMaxLength(20)
-               .HasColumnName("Doviz Cinsi");
+                .HasMaxLength(20);
+
 
             Property(u => u.DovizKuru)
-                .IsOptional() 
-               .HasColumnName("Doviz Kuru");
+                .IsOptional();
+
 
             Property(u => u.DovizTutar)
-                .IsOptional()
-               .HasColumnName("Doviz Tutar");
+                .IsOptional();
+
 
             Property(u => u.Kod1)
                 .IsOptional()
-                .HasMaxLength(20)
-               .HasColumnName("Kod1");
+                .HasMaxLength(20);
+
 
             Property(u => u.Kod2)
                 .IsOptional()
-                .HasMaxLength(20)
-               .HasColumnName("kod2");
+                .HasMaxLength(20);
+
 
             Property(u => u.Kod3)
               .IsOptional()
-              .HasMaxLength(20)
-             .HasColumnName("Kod3");
+              .HasMaxLength(20);
+
 
             Property(u => u.Kod4)
-              .IsOptional()
-             .HasColumnName("Kod4");
+              .IsOptional();
+
 
             Property(u => u.Kod5)
-              .IsOptional()
-             .HasColumnName("Kod5");
+              .IsOptional();
+
 
             Property(u => u.TeslimAdres1)
               .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Teslim Adresi1");
+              .HasMaxLength(50);
+
 
             Property(u => u.TeslimAdres2)
               .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Teslim Adresi2");
+              .HasMaxLength(50);
+
 
             Property(u => u.TeslimAdres3)
               .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Teslim Adresi3");
+              .HasMaxLength(50);
+
 
             Property(u => u.Aciklama1)
               .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Aciklama1");
+              .HasMaxLength(50);
 
             Property(u => u.Aciklama2)
               .IsOptional()
-              .HasMaxLength(50)
-             .HasColumnName("Aciklama2");
+              .HasMaxLength(50);
+
 
             Property(u => u.KDVHesaplama)
               .IsOptional()
-              .HasMaxLength(10)
-             .HasColumnName("KDV Hesaplama");
+              .HasMaxLength(10);
+
 
             Property(u => u.KaynakEvrakTipi)
               .IsRequired()
-              .HasMaxLength(50)
-             .HasColumnName("Kaynak Evrak Tipi");
+              .HasMaxLength(50);
+             
 
             
         }

@@ -93,9 +93,9 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
         public string SonPozisyon { get; set; }
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
-        public string BordroNo { get; set; }
+        [Column(TypeName = "decimal")]
+        
+        public decimal BordroNo { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string BordroSeri { get; set; }

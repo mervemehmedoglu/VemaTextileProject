@@ -20,175 +20,136 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.Seri)
                 .IsRequired()
                 .IsUnicode()
-                .HasMaxLength(2)
-                .HasColumnName("Seri");
-
-            
+                .HasMaxLength(2);
+                
 
             Property(u => u.Borclu)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Borclu");
+               .HasMaxLength(20);
 
             Property(u => u.BorcluUnvan)
                .IsUnicode()
-               .HasMaxLength(50)
-               .HasColumnName("Borclu Unvan");
-
-            Property(u => u.AlimTarihi)
-               .HasColumnName("Alim Tarihi");
+               .HasMaxLength(50);
 
             Property(u => u.CekiVeren)
                 .IsUnicode()
-                .HasMaxLength(20)
-                .HasColumnName("Ceki Veren");
+                .HasMaxLength(20);
+
 
             Property(u => u.CekiVerenUnvan)
                 .IsUnicode()
-                .HasMaxLength(50)
-                .HasColumnName("Ceki Veren Unvan");
-
-            Property(u => u.Tutar)
-                .HasColumnName("Tutar");
-
-            Property(u => u.TahsilMasrafi)
-                .HasColumnName("Tahsil Masrafi");
-
+                .HasMaxLength(50);
 
             Property(u => u.CekTipi)
-
                 .IsUnicode()
-                .HasMaxLength(20)
-                .HasColumnName("Cek Tipi");
+                .HasMaxLength(20);
+                
 
             Property(u => u.VadeTarihi)
-                .IsRequired()
-                .HasColumnName("Vade Tarihi");
+                .IsRequired();
+                
 
             Property(u => u.Sehir)
                 .IsUnicode()
-                .HasMaxLength(20)
-                .HasColumnName("Sehir");
+                .HasMaxLength(20);
+
 
             Property(u => u.Kod1)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Kod 1");
+               .HasMaxLength(20);
+               
 
             Property(u => u.Kod2)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Kod 2");
+               .HasMaxLength(20);
+               
 
             Property(u => u.Kod3)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Kod 3");
-
-            Property(u => u.DovizTutar)
-               .HasColumnName("Doviz Tutar");
+               .HasMaxLength(20);
+                           
 
             Property(u => u.DovizCinsi)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Doviz Cinsi");
+               .HasMaxLength(20);
 
-            Property(u => u.DovizKuru)
-               .HasColumnName("Doviz Kuru");
-
-            Property(u => u.DovizTutar)
-               .HasColumnName("Doviz Tutar");
 
             Property(u => u.Banka)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Banka");
+               .HasMaxLength(20);
+               
 
             Property(u => u.Sube)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Sube");
+               .HasMaxLength(20);
+               
 
             Property(u => u.BankaHesapNo)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Banka Hesap No");
+               .HasMaxLength(20);
+               
 
             Property(u => u.CekNo)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Cek No");
+               .HasMaxLength(20);
+
 
             Property(u => u.TahsileCikilanBanka)
                .IsUnicode()
-               .HasMaxLength(20)
-               .HasColumnName("Tahsile Cikilan Banka");
+               .HasMaxLength(20);
+
 
             Property(u => u.TahsileCikilanBankaUnvan)
                .IsUnicode()
-               .HasMaxLength(50)
-               .HasColumnName("Tahsile Cikilan Banka Unvan");
+               .HasMaxLength(50);
+               
 
 
             Property(u => u.IslemTipi)
                .IsUnicode()
                .HasMaxLength(40);
 
-            Property(u => u.Tarih)
-               .HasColumnName("Tarih");
-
             Property(u => u.SonPozisyon)
               .IsUnicode()
-              .HasMaxLength(40)
-              .HasColumnName("Son Pozisyon");
-
-            Property(u => u.BordroNo)
-              .IsUnicode()
-              .HasMaxLength(8)
-              .HasColumnName("Bordro No ");
+              .HasMaxLength(40);
+              
+              
 
             Property(u => u.BordroSeri)
               .IsUnicode()
-              .HasMaxLength(2)
-              .HasColumnName("Bordro Seri");
+              .HasMaxLength(2);
+              
 
             Property(u => u.BordroIdNo)
-              .IsOptional()
-              .HasColumnName("Islem Tipi");
+              .IsOptional();
+              
 
             Property(u => u.Aciklama)
               .IsUnicode()
-              .HasMaxLength(50)
-              .HasColumnName("Aciklama ");
-
-            Property(u => u.IDCek)
-              .HasColumnName("ID Cek");
-
+              .HasMaxLength(50);
+              
             Property(u => u.HesapKodu)
               .IsUnicode()
-              .HasMaxLength(20)
-              .HasColumnName("Hesap Kodu");
+              .HasMaxLength(20);
+              
 
             Property(u => u.HesapAdi)
               .IsUnicode()
-              .HasMaxLength(50)
-              .HasColumnName("Hesap Adi");
+              .HasMaxLength(50);
+              
 
             Property(u => u.Kaydeden)
               .IsUnicode()
-              .HasMaxLength(10)
-              .HasColumnName("Kaydeden");
+              .HasMaxLength(10);
+              
 
-            Property(u => u.KayitTarihi)
-            .HasColumnName("Kayit Tarihi");
+            
 
             Property(u => u.Degistiren)
             .IsUnicode()
-            .HasMaxLength(10)
-            .HasColumnName("Degistiren");
+            .HasMaxLength(10);
+            
 
-            Property(u => u.DegisiklikTarihi)
-            .HasColumnName("Degistiren Tarihi ");
 
            
         }
