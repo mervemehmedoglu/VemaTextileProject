@@ -12,7 +12,8 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        [Required]
+        public int IDMalKodu { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string MalKodu { get; set; }
@@ -44,9 +45,7 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal")]
-        public decimal IdNo { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -65,9 +64,8 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string IslemTuru { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string MamulMalKodu { get; set; }
+        
+        public int IDMamulMalKodu { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

@@ -21,8 +21,6 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string Seri { get; set; }
 
-        
-
         [Column(TypeName = "nvarchar")]
         [StringLength(1)]
         public string Ok { get; set; }
@@ -39,9 +37,5 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "money")]
         public decimal Tutar { get; set; }
-
-        
-
-        
     }
 }

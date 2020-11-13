@@ -8,6 +8,12 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         public int ID { get; set; }
+        public int IDCHKKodu { get; set; }
+
+        
+        [Column(TypeName = "nvarchar")]
+        [StringLength(8)]
+        public string CHKKodu { get; set; }
 
         [Required]
         public DateTime Tarih { get; set; }
@@ -29,7 +35,7 @@ namespace VemaTextile.Models.Class
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
-        public string CHKKodu { get; set; }
+        public string IDCHKKodu { get; set; }
 
         
         [Required]

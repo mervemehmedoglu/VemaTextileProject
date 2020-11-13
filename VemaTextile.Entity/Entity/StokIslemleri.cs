@@ -11,12 +11,16 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         public int ID { get; set; }
-        [Required]
+        
+
+        public int IDMalKodu { get; set; }
+
+        [StringLength(50)]
         [Column(TypeName = "nvarchar")]
         public string MalKodu { get; set; }
 
         [Required]
-
+        [StringLength(50)]
         [Column(TypeName = "nvarchar")]
         public string MalAdi { get; set; }
 
@@ -65,9 +69,8 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IslemTuru { get; set; }
 
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        public string CHKKodu { get; set; }
+
+        public int IDCHKKodu { get; set; }
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -175,8 +178,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string SeriNo { get; set; }
 
-        
-
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kod1 { get; set; }
@@ -197,11 +198,9 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod5 { get; set; }
 
-        
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kaydeden { get; set; }
-
         public DateTime KayitTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]

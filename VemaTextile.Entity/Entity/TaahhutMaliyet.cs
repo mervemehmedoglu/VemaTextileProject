@@ -15,7 +15,7 @@ namespace VemaTextile.Models.Class
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string MalKodu { get; set; }
+        public string IDMalKodu { get; set; }
 
         
         [Required]
@@ -71,7 +71,7 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string CHKKodu{ get; set; }
+        public string IDCHKKodu{ get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

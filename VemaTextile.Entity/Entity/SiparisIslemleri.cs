@@ -12,12 +12,24 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        [Required]
+        public int IDSiparis { get; set; }
+
+        public int IDMalKodu { get; set; }
+        public int IDCHKKodu { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string Siparis { get; set; }
+
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string MalKodu { get; set; }
 
-        
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string CHKKodu { get; set; }
+
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -56,9 +68,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IslemTuru { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string CHKKodu { get; set; }
+       
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -150,11 +160,6 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "money")]
         public decimal MasrafTutar { get; set; }
-
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal")]
-        public string IDSiparis { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

@@ -14,7 +14,13 @@ namespace VemaTextile.Models.Class
         public int ID { get; set; }
         
         [Required]
-        public int HesapKodu { get; set; }
+        public int IDHesapKodu { get; set; }
+        
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string HesapKodu { get; set; }
+
+
         [Required]
         public string HesapAdi { get; set; }
         public string HesapAdi2 { get; set; }

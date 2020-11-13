@@ -12,15 +12,18 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
+        public int IDCHKKodu { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string CHKKodu { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(57)]
         public string EvrakNo { get; set; }
 
         public DateTime Tarih { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        public string CHKKodu { get; set; }
 
         [Column(TypeName = "nvarchar")]
         public string CHKAdi { get; set; }

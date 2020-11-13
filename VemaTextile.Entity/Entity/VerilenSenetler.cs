@@ -12,6 +12,19 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
+       
+        public int IDSenetKodu { get; set; }
+        public int IDHesapKodu { get; set; }
+
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string HesapKodu { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(50)]
+        public string HesapAdi { get; set; }
+
         [Required]
         [Column(TypeName = "decimal")]
         public decimal EvrakNo { get; set; }
@@ -118,17 +131,8 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Aciklama { get; set; }
 
-        [Required]
-        [Column(TypeName = "decimal")]
-        public decimal IDSenet { get; set; }
+        
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string HesapKodu { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string HesapAdi { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(10)]

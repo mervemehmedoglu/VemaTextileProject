@@ -11,6 +11,19 @@ namespace VemaTextile.Models.Class
     {
         [Key]
         public int ID { get; set; }
+        public int IDCekKodu { get; set; }
+        public int IDHesapKodu { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(40)]
+        public string IDCek { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string HesapKodu { get; set; }
+        [Column(TypeName = "nvarchar")]
+        [StringLength(50)]
+        public string HesapAdi { get; set; }
 
         [Required]
         [Column(TypeName = "decimal")]
@@ -88,7 +101,9 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
         public string IslemTipi { get; set; }
-        
+
+       
+
         public DateTime Tarih { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
@@ -105,14 +120,8 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Aciklama { get; set; }
-        [Column(TypeName = "decimal")]
-        public decimal IDCek { get; set; }
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string HesapKodu { get; set; }
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string HesapAdi { get; set; }
+        
+        
         [Column(TypeName = "nvarchar")]
         [StringLength(10)]
         public string Kaydeden { get; set; }

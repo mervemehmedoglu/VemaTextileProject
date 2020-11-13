@@ -12,9 +12,11 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        [Required]
+        
+        public int IDHesapKodu { get; set; }
+
         [Column(TypeName = "varchar")]
-        [StringLength(50)]
+        [StringLength(20)]
         public string HesapKodu { get; set; }
 
         [Required]

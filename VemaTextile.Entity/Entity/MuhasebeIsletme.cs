@@ -12,6 +12,18 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
+        public int IDHesapKodu { get; set; }
+        public int IDIsletmeKodu { get; set; }
+
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(50)]
+        public string IsletmeKodu { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(20)]
+        public string HesapKodu { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -38,10 +50,7 @@ namespace VemaTextile.Models.Class
         [Required]
         public DateTime VadeTarih { get; set; }
 
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string IsletmeKodu { get; set; }
+        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

@@ -13,6 +13,17 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
+        public int IDHesapKodu { get; set; }
+
+
+        [Required]
+        [Column(TypeName = "nvarchar")]
+        public string HesapKodu { get; set; }
+
+        [Required]
+        [Column(TypeName = "nvarchar")]
+        public string HesapAdi { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(57)]
@@ -40,13 +51,6 @@ namespace VemaTextile.Models.Class
         [StringLength(80)]
         public string KaynakEvrakTipi { get; set; }
        
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        public string HesapKodu { get; set; }
-       
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        public string HesapAdi { get; set; }
         
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
@@ -128,7 +132,7 @@ namespace VemaTextile.Models.Class
         
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string IDHesapKodu{ get; set; }
+        
         
         
 
