@@ -227,7 +227,7 @@ namespace VemaTextile.Models.Class
         public DateTime DegisiklikSaati { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal Row_ID { get; set; }
 
         [Column(TypeName = "money")]

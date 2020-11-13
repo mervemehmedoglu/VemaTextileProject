@@ -121,10 +121,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
               .HasMaxLength(50)
              .HasColumnName("Kaynak Evrak Tipi");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-                .IsRequired()
-                .HasColumnName("Row ID");
+            
         }
     }
 }

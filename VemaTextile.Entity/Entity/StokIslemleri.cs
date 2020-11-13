@@ -82,11 +82,11 @@ namespace VemaTextile.Models.Class
         public string Birim1 { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal BirimMiktar { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal Miktar { get; set; }
 
         
@@ -97,7 +97,7 @@ namespace VemaTextile.Models.Class
         public decimal OranIskonto3 { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal BirimFiyat { get; set; }
 
         [Column(TypeName = "money")]
@@ -200,19 +200,16 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod5 { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kaydeden { get; set; }
-
 
         public DateTime KayitTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Degistiren { get; set; }
-
         public DateTime DegisiklikTarihi { get; set; }
 
        

@@ -10,26 +10,26 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Aciklama
         {
             ToTable("AciklamaTablosu");
 
-
             HasKey(x => x.ID);
             Property(x => x.ID)
-                .HasColumnName("ID");
+                .IsRequired();
 
 
-
-            Property(x => x.Parametre1)
-                .HasColumnName("Parametre1");
+            Property(u => u.Parametre1)
+                .IsRequired()
+                .IsUnicode()
+                .HasMaxLength(50);
 
             Property(u => u.Parametre2)
                 .IsRequired()
                 .IsUnicode()
-                .HasMaxLength(50)
-                .HasColumnName("Parametre2");
+                .HasMaxLength(50);
+
 
             Property(u => u.Aciklama)
                .IsOptional()
-               .IsUnicode()
-               .HasColumnName("Aciklama");
+               .IsUnicode();
+               
         }
 
         

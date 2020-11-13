@@ -56,10 +56,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
             Property(u => u.DigerKomisyon)
                .HasColumnName("Diger Komisyon ");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-               .IsRequired()
-               .HasColumnName("Row ID");
+            
 
         }
     }

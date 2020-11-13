@@ -10,7 +10,6 @@ namespace VemaTextile.Models.Class
     public class GeriOdemePlani
     {
         [Key]
-        [Required]
         public int ID { get; set; }
 
         [Required]
@@ -31,19 +30,19 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Tip { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal Ay { get; set; }
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal Gun { get; set; }
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal SabitGun { get; set; }
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal HizmetKomisyonu { get; set; }
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal PuanKomisyonu { get; set; }
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal VadeKomisyonu { get; set; }
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal DigerKomisyon { get; set; }
         
 

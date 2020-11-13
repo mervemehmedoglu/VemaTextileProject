@@ -23,8 +23,6 @@ namespace VemaTextile.Models.Class
         [StringLength(4)]
         public string  Seri { get; set; }
        
-        
-       
         public DateTime Tarih { get; set; }
         
         [Column(TypeName = "money")]

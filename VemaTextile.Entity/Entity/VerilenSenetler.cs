@@ -12,20 +12,15 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-
-
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal EvrakNo { get; set; }
-
 
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string Seri { get; set; }
 
-
-
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -52,7 +47,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string SenetTipi { get; set; }
 
-       
         [Required]
         public DateTime VadeTarihi { get; set; }
 
@@ -120,16 +114,15 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string BordroSeri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal BordroIdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Aciklama { get; set; }
 
-        
         [Required]
-        [Column(TypeName = "decimal(10,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IDSenet { get; set; }
 
         [Column(TypeName = "nvarchar")]

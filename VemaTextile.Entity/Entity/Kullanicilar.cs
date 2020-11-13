@@ -10,11 +10,8 @@ namespace VemaTextile.Models.Class
     public class Kullanicilar
     {
         [Key]
-        [Required]
         public int ID { get; set; }
 
-        
-        
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string KullaniciAdi { get; set; }

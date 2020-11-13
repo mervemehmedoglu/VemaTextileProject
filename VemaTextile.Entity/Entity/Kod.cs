@@ -10,7 +10,6 @@ namespace VemaTextile.Models.Class
     public class KOD
     {
         [Key]
-        [Required]
         public int ID { get; set; }
 
         [Column(TypeName = "nvarchar")]

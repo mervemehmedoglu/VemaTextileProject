@@ -10,7 +10,6 @@ namespace VemaTextile.Models.Class
     public class KarmaKoli
     {
         [Key]
-        [Required]
         public int ID { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -84,9 +83,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "money")]
         public string Tutar { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDMalKodu { get; set; }
 
        
     }

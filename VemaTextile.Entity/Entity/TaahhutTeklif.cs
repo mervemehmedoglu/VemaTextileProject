@@ -16,14 +16,10 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
-        public string EvrakNo { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
         public string Seri { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]

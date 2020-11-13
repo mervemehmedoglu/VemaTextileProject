@@ -36,26 +36,21 @@ namespace VemaTextile.Models.Class
 
         public DateTime SevkTarihi { get; set; }
 
-        
-        
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string Seri { get; set; }
 
-        
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTipi { get; set; }
 
-
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -123,7 +118,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string SiparisDurumu { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -159,7 +153,7 @@ namespace VemaTextile.Models.Class
 
         [Key]
         [Required]
-        [Column(TypeName = "decimal(19,4)")]
+        [Column(TypeName = "decimal")]
         public string IDSiparis { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -200,7 +194,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kaydeden { get; set; }
 
-       
         public DateTime KayitTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -209,16 +202,7 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDMalKodu { get; set; }
-
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
-
+       
+      
     }
 }

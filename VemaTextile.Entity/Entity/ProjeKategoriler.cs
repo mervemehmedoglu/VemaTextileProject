@@ -17,20 +17,15 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        
-
-        [Key]
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(40)]
         public string ParentID { get; set; }
 
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string ProjectKey { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -40,53 +35,43 @@ namespace VemaTextile.Models.Class
         public DateTime TaskStartTime { get; set; }
         public DateTime TaskFinishTime { get; set; }
 
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string TaskDuration { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Onculler { get; set; }
 
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string TaskPercentComplete { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Constraint { get; set; }
 
-       
-
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(10)]
         public string MilesStone { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(400)]
         public string OnculTask { get; set; }
 
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kullanan { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "nhtext")]
         public string Aciklama { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -109,7 +94,7 @@ namespace VemaTextile.Models.Class
         public string SonTarih { get; set; }
         
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal SiraNo { get; set; }
 
    

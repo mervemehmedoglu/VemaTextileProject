@@ -17,15 +17,11 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-       
-
-       
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string TaskName { get; set; }
 
-        
         [Required]
         public DateTime TaskStartTime { get; set; }
 
@@ -59,14 +55,11 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Onculler { get; set; }
 
-       
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(500)]
         public string OnculTask { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -77,13 +70,11 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kullanan2 { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Durum { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(1)]

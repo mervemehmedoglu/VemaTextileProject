@@ -24,12 +24,10 @@ namespace VemaTextile.Models.Class
 
         public DateTime Tarih { get; set; }
 
-        
         [Required]
         [Column(TypeName = "money")]
         public string FisNo { get; set; }
 
-        
         [Required]
         [Column(TypeName = "money")]
         public decimal MaddeNo { get; set; }
@@ -142,10 +140,5 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDHesapKodu { get; set; }
-
-      
     }
 }

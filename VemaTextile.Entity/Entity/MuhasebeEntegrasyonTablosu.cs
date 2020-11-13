@@ -12,7 +12,7 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal RowNumber { get; set; }
 
         [Column(TypeName = "nvarchar")]

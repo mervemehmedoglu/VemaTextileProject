@@ -12,7 +12,6 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
@@ -20,7 +19,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string KaynakEvrakTipi { get; set; }
-
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

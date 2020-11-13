@@ -21,13 +21,13 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string BordroSeri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal BordroIdNo { get; set; }
 
         public DateTime Tarih { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal EvrakNo { get; set; }
 
 
@@ -48,14 +48,14 @@ namespace VemaTextile.Models.Class
         public string Aciklama { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal Miktar { get; set; }
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal HizmetTutar { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal Tutar { get; set; }
 
 
@@ -64,19 +64,19 @@ namespace VemaTextile.Models.Class
         public string KdvDahilHaric { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal KdvOran { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal Kdv { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal Toplam { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal Iade { get; set; }
 
         [Required]
@@ -109,10 +109,5 @@ namespace VemaTextile.Models.Class
 
         public DateTime DegisiklikTarihi { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string IDIsletmeKodu { get; set; }
-
-        
     }
 }

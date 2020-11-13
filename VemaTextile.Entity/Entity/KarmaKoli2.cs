@@ -10,7 +10,6 @@ namespace VemaTextile.Models.Class
     public class KarmaKoli2
     {
         [Key]
-        [Required]
         public int ID { get; set; }
 
         [Required]
@@ -46,7 +45,7 @@ namespace VemaTextile.Models.Class
         public string Seri { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -161,10 +160,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string SeriNo { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IDSiparis { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

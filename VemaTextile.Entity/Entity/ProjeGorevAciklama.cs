@@ -12,8 +12,6 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -21,7 +19,7 @@ namespace VemaTextile.Models.Class
        
         public DateTime Tarih { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string Aciklama { get; set; }
 
         

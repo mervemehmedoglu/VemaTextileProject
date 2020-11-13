@@ -20,7 +20,7 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -34,7 +34,7 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "money")]
         public string Tutar { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal SiraNo { get; set; }
 
         

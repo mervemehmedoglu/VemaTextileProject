@@ -10,7 +10,6 @@ namespace VemaTextile.Models.Class
     public class CariHesapKartlari
     {
         [Key]
-        [Required]
         public int ID { get; set; }
         
         [Required]
@@ -121,13 +120,13 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)] 
         public string Aciklama1 { get; set; }
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string Aciklama2 { get; set; }
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)] 
+        [StringLength(9)] 
         public string NufusCuzdanSeriNo { get; set; }
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)] 
+        [StringLength(11)] 
         public string TCKimlikNo { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(20)] 
@@ -145,13 +144,13 @@ namespace VemaTextile.Models.Class
         [StringLength(30)] 
         public string KefilAdi { get; set; }
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)] 
+        [StringLength(13)] 
         public string KefilTelefon { get; set; }
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)] 
+        [StringLength(9)] 
         public string KefilNufusCuzdanSeriNo { get; set; }
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)] 
+        [StringLength(11)] 
         public string KefilTCKimlikNo { get; set; }
         [Column(TypeName = "nvarchar")]
         [StringLength(20)] 

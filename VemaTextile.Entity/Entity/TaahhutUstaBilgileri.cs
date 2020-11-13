@@ -35,25 +35,25 @@ namespace VemaTextile.Models.Class
         [StringLength(10)]
         public string Tıp{ get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string İscilikTipiT { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string İscilikTipiTAciklama { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string İscilikTipiAciklama { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string İscilikTipiMiktar { get; set; }
 
-        [Column(TypeName = "text")]
+        [Column(TypeName = "ntext")]
         public string İscilikTipiFiyat { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal İscilik { get; set; }
 
-        [Column(TypeName = "decimal(19,2)")]
+        [Column(TypeName = "decimal")]
         public decimal HakedisTutar { get; set; }
 
         [Required]

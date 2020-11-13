@@ -17,7 +17,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string MalKodu { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -36,20 +35,11 @@ namespace VemaTextile.Models.Class
         public DateTime Tarih { get; set; }
 
         public DateTime SevkTarihi { get; set; }
-
-        
-        [Required]
-        [Column(TypeName = "nvarchar")]
-        [StringLength(8)]
-        public string EvrakNo { get; set; }
-
         
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(2)]
         public string Seri { get; set; }
-
-        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]

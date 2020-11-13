@@ -36,17 +36,13 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-
-        
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
-
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string OdemeTipi { get; set; }
 
-        
         [Required]
         public DateTime OdemeTarihi { get; set; }
 
@@ -72,9 +68,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kod3 { get; set; }
-
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal IdOdeme { get; set; }
 
         
 

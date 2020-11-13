@@ -20,8 +20,6 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { set; get; }
        
-       
-       
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Borclu { set; get; }
@@ -50,7 +48,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string SenetTipi { set; get; }
 
-        
         [Required]
         public DateTime VadeTarihi { set; get; }
 
@@ -126,13 +123,9 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string BordroSeri { set; get; }
 
-        
-
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Aciklama { set; get; }
-
-        
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

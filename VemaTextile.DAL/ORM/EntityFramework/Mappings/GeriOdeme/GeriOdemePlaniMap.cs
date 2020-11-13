@@ -65,10 +65,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.GeriOdeme
                .IsOptional()
                .HasColumnName("Diger Komisyonu");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-               .IsRequired()
-               .HasColumnName("Hesap Adi");
+           
 
         }
     }

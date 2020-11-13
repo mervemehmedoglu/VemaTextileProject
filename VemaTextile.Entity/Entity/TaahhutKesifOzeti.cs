@@ -12,8 +12,6 @@ namespace VemaTextile.Models.Class
         [Required]
         public DateTime Tarih { get; set; }
 
-
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -93,70 +91,70 @@ namespace VemaTextile.Models.Class
         [StringLength(100)]
         public string Notlar { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal AnlasmaTutari { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Pesinat { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal TaksitSayisi { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal FaizOrani { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal TaksitTutari { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal ToplamTutar { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Tip { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal T { get; set; }        //SMALLİNT YAPILACAK
 
         [Column(TypeName = "nvarchar")]
         [StringLength(100)]
         public string Aciklama { get; set; }
         
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Miktar { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Fiyat { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Tutar { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kaydeden { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal ProjeMaliyeti { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Iscilik { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal VadeFarki { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string KdvOtomatik { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Kdv { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal ToplamMaliyet { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Kar { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal KarYuzdesi { get; set; }
 
        

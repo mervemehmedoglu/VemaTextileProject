@@ -10,9 +10,12 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
         {
             ToTable("AlinanCekler");
 
-            HasKey(x => x.EvrakNo);
-            Property(x => x.EvrakNo)
-                .HasColumnName("Evrak No");
+            HasKey(x => x.ID);
+            Property(x => x.ID)
+                .IsRequired();
+
+            Property(u => u.EvrakNo)
+                .IsRequired();
 
             Property(u => u.Seri)
                 .IsRequired()
@@ -20,9 +23,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
                 .HasMaxLength(2)
                 .HasColumnName("Seri");
 
-            Property(u => u.IdNo)
-                .IsRequired()
-                .HasColumnName("Id No");
+            
 
             Property(u => u.Borclu)
                .IsUnicode()
@@ -189,9 +190,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
             Property(u => u.DegisiklikTarihi)
             .HasColumnName("Degistiren Tarihi ");
 
-            HasKey(x => x.Row_ID);
-            Property(x => x.Row_ID)
-            .HasColumnName("Row ID");
+           
         }
     
 

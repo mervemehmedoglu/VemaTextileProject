@@ -10,48 +10,44 @@ namespace VemaTextile.Models.Class
     public class GeriOdemeIslemleri
     {
         [Key]
-        [Required]
         public int ID { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string HesapKodu { get; set; }
 
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string BankaHesapKodu { get; set; }
-
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string TahsilatTipi { get; set; }
 
-
         [Required]
         public DateTime VadeTarihi { get; set; }
 
-
-        [Column(TypeName = "decimal(18,4)")]
+        [Column(TypeName = "decimal")]
         public decimal Tutar { get; set; }
 
-        [Column(TypeName = "decimal(18,4)")]
+        [Column(TypeName = "decimal")]
         public decimal HizmetKomisyonu { get; set; }
-        [Column(TypeName = "decimal(18,4)")]
+
+        [Column(TypeName = "decimal")]
         public decimal PuanKomisyonu { get; set; }
-        [Column(TypeName = "decimal(18,4)")]
+
+        [Column(TypeName = "decimal")]
         public decimal VadeKomisyonu { get; set; }
-        [Column(TypeName = "decimal(18,4)")]
+
+        [Column(TypeName = "decimal")]
         public decimal DigerKomisyon { get; set; }
         
 

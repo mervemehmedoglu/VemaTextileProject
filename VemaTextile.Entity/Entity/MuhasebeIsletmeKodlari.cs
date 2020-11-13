@@ -32,27 +32,27 @@ namespace VemaTextile.Models.Class
         public int KdvOran { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal DBTutar { get; set; }
         
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal DBKdv { get; set; }
         
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal DBMiktar { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal DSTutar { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal DSKdv { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal DSMiktar { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -71,7 +71,6 @@ namespace VemaTextile.Models.Class
         [StringLength(10)]
         public string Kaydeden { get; set; }
 
-        
         public DateTime KayitTarihi { get; set; }
         public DateTime KayitSaati { get; set; }
 

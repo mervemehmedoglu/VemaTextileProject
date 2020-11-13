@@ -49,7 +49,7 @@ namespace VemaTextile.Models.Class
 
         [Key]
         [Required]
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IdNo { get; set; }
 
         [Column(TypeName = "nvarchar")]

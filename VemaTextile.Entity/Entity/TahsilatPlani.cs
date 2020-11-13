@@ -68,7 +68,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod3 { get; set; }
 
-        [Column(TypeName = "decimal(18,0)")]
+        [Column(TypeName = "decimal")]
         public decimal IDOdeme { get; set; }
 
        

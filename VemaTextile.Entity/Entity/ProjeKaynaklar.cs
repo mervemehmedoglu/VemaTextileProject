@@ -42,26 +42,22 @@ namespace VemaTextile.Models.Class
         public string ProjeNo { get; set; }
 
         
-        [Column(TypeName = "decimal(19,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Miktar { get; set; }
 
-        [Column(TypeName = "decimal(19,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Fiyat { get; set; }
 
-        [Column(TypeName = "decimal(19,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Tutar { get; set; }
 
-        [Column(TypeName = "decimal(19,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Hakedis { get; set; }
-
-        
 
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string GorevAdi { get; set; }
-
-        
 
         
         [Column(TypeName = "nvarchar")]
@@ -72,8 +68,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kaydeden { get; set; }
-
-        
 
         public DateTime KayitTarihi { get; set; }
         public DateTime KayitSaati { get; set; }

@@ -9,6 +9,9 @@ namespace VemaTextile.Models.Class
 {
     public class FaturaBilgileri
     {
+        [Key]
+        public int ID { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(57)]
@@ -94,9 +97,5 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string KaynakEvrakTipi { get; set; }
 
-        [Key]
-        [Required]
-        [Column(TypeName = "decimal(18,0)")]
-        public decimal Row_ID { get; set; }
     }
 }
