@@ -141,7 +141,7 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
-        public decimal KDVDahilHaric { get; set; }
+        public string KDVDahilHaric { get; set; }
 
         [Column(TypeName = "money")]
         public decimal OTVOran { get; set; }

@@ -69,6 +69,7 @@
     <Compile Include="ORM\EntityFramework\Mappings\Islemler\SayimIslemleriMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Islemler\SilinenKayitlarMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Islemler\SiparisIslemleriMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\KarmaKoliler\KarmaKoli2Map.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\KarmaKoliler\KarmaKoliMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Kods\KodMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Kullanici\KullanicilarMap.cs" />

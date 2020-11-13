@@ -32,7 +32,7 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string AlimdanladelerHesabiHesabi { get; set; }
+        public string AlimdanladelerHesabi { get; set; }
 
         [Column(TypeName = "varchar")]
         [StringLength(20)]
