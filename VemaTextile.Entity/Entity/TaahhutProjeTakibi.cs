@@ -63,29 +63,6 @@ namespace VemaTextile.Models.Class
         public string Telefon2 { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string TesisatNo { get; set; }
-
-        [Column(TypeName = "decimal")]
-        public decimal DAgizSayisi { get; set; }
-
-        [Column(TypeName = "decimal")]
-        public decimal DAdet { get; set; }
-
-        [Column(TypeName = "decimal")]
-        public decimal KAgizSayisi { get; set; }
-
-        [Column(TypeName = "decimal")]
-        public decimal KAdet { get; set; }
-
-        [Column(TypeName = "decimal")]
-        public decimal KalDSayisi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KalBCinsi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kod1 { get; set; }
 
@@ -98,14 +75,6 @@ namespace VemaTextile.Models.Class
         public string Kod3 { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Muhendis { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string GazBolgesi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
         [StringLength(30)]
         public string Randevu1Eksik { get; set; }
 
@@ -116,10 +85,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(30)]
         public string Randevu3Eksik { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string GMuhendis { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -139,10 +104,6 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
-        public string RoleveAlindi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(5)]
         public string ProjeCizildi { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -159,10 +120,6 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
-        public string SayacTakildi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(5)]
         public string Randevu1 { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -176,14 +133,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string KontrolYapildi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(5)]
-        public string GazAcildi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(5)]
-        public string CihazCalisti { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
@@ -215,7 +164,6 @@ namespace VemaTextile.Models.Class
 
         public DateTime IsBitirildiTarih { get; set; }
 
-        public DateTime RoleveAlindiTarih { get; set; }
 
         public DateTime ProjeCizildiTarih { get; set; }
 
@@ -232,23 +180,6 @@ namespace VemaTextile.Models.Class
         public DateTime Randevu2Tarih { get; set; }
 
         public DateTime Randevu3Tarih { get; set; }
-
-        public DateTime KontrolYapildiTarih { get; set; }
-
-        public DateTime GazAcildiTarih { get; set; }
-
-        public DateTime CihazCalistiTarih { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
-        public string CihazPrimi { get; set; }
-
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(5)]
-        public string AboneligiVar { get; set; }
-
-        public DateTime AbonelikTarih { get; set; }
 
         [Column(TypeName = "decimal")]
         public decimal AnlasmaTutari { get; set; }

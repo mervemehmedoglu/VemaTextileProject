@@ -79,7 +79,7 @@
     <Compile Include="ORM\EntityFramework\Mappings\Muhasebe\MuhasebeIsletmeKodlariMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Muhasebe\MuhasebeIsletmeMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Muhasebe\MuhasebeMasrafMerkeziKartlariMap.cs" />
-    <Compile Include="ORM\EntityFramework\Mappings\Muhasebe\MuhasebeİslemleriMap.cs" />
+    <Compile Include="ORM\EntityFramework\Mappings\Muhasebe\MuhasebeIslemleriMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Odeme\OdemePlaniMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Proje\PrejeKaynaklarMap.cs" />
     <Compile Include="ORM\EntityFramework\Mappings\Proje\ProjeGorevAciklamaMap.cs" />

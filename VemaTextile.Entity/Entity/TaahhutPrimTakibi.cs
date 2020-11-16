@@ -31,9 +31,6 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string FaturaNo { get; set; }
 
-        
-        
-
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Unvan { get; set; }
@@ -57,9 +54,8 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "money")]
         public decimal CihazTutar { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
-        public string CalistirilmaTarihi { get; set; }
+        
+        public DateTime CalistirilmaTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]

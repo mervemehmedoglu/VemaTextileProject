@@ -61,13 +61,13 @@ namespace VemaTextile.Models.Class
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string İslemTipi { get; set; }
+        public string IslemTipi { get; set; }
 
         
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
-        public string İslemTuru { get; set; }
+        public string IslemTuru { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
