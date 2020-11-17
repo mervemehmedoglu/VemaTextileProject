@@ -27,14 +27,6 @@ namespace VemaTextile.Models.Class
         public string HesapAdi { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string TesisatAdresi1 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string TesisatAdresi2 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Telefon1 { get; set; }
 

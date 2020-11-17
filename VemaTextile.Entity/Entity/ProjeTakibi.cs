@@ -31,9 +31,6 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        
-        
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -72,13 +69,13 @@ namespace VemaTextile.Models.Class
         [StringLength(5)]
         public string Diger3 { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal DigerTutar1 { get; set; }
         
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal DigerTutar2 { get; set; }
         
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal DigerTutar3 { get; set; }
 
         [Column(TypeName = "nvarchar")]

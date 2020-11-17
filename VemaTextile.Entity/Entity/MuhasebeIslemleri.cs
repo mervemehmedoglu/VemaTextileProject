@@ -20,7 +20,7 @@ namespace VemaTextile.Models.Class
         public string HesapKodu { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
+        [StringLength(50)]
         public string HesapAdi { get; set; }
 
         public DateTime Tarih { get; set; }
@@ -77,7 +77,7 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string EvrakTipi { get; set; }
 
-        [Column(TypeName = "nvarchar")]
+        [Column(TypeName = "nvarchar")]                //Evrak Length bak
         [StringLength(17)]
         public string EvrakNo { get; set; }
 

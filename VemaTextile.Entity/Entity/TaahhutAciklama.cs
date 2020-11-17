@@ -25,7 +25,7 @@ namespace VemaTextile.Models.Class
         [StringLength(1)]
         public string Ok { get; set; }
 
-        [Column(TypeName = "nvarchar")]
+        [Column(TypeName = "ntext")]
         [StringLength(200)]
         public string Aciklama { get; set; }
 

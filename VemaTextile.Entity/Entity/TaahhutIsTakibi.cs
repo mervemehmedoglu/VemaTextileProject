@@ -109,18 +109,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "money")]
         public decimal VadeFarkiOrani { get; set; }
 
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string IgdasBolgesi { get; set; }
-
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(1)]
-        public string IgdasaVerildi { get; set; }
-
-        public DateTime IgdasaVerilmeTarihi { get; set; }
-
         [Column(TypeName = "nvarchar")]
         [StringLength(1)]
         public string ProjeOnaylandi { get; set; }
@@ -131,11 +119,6 @@ namespace VemaTextile.Models.Class
         [StringLength(1)]
         public string SozlesmeYapildi { get; set; }
         public DateTime SozlesmeYapilmaTarihi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(1)]
-        public string SayacTakildi { get; set; }
-        public DateTime SayacTakilmaTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(1)]
@@ -165,10 +148,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string Eksikler3 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(1)]
-        public string GazAcildi { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(8)]
@@ -202,214 +181,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod3 { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod4 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod5 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod6 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod7 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod8 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod9 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string Kod10 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(1)]
-        public string IgdasAbonelik { get; set; }
-
-        public DateTime IgdasAbonelikTarihi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(1)]
-        public string RoleveAlindi { get; set; }
-
-        public DateTime RoleveAlinmaTarihi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(1)]
-        public string KontrolYapildi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50)]
-        public string IgdasMuhendisi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KombiMarka { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KombiTipi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KombiModeli { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KombiKapasite { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KombiGaranti { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorMarka { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorTipi { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorModeli { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string KombiSeriNo { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorGaranti { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi1 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi2 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi3 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi4 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi5 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi6 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi7 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi8 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi9 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaTipi10 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu1 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu2 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu3 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu4 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu5 { get; set; }
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu6 { get; set; }
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu7 { get; set; }
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu8 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu9 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string OdaOlcu10 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu1 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu2 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu3 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu4 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu5 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu6 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu7 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu8 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu9 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string RadyatorOlcu10 { get; set; }
-
-        [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
-        public string TesisatCinsi { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
