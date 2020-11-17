@@ -13,6 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Odeme
     {
         public OdemePlaniMap()
         {
+            ToTable("OdemePlaniTablosu");
             HasKey(x => x.ID);
 
             Property(u => u.HesapKodu)

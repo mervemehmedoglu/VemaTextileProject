@@ -13,6 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Proje
     {
         public ProjeGorevlerMap()
         {
+            ToTable("ProjeGorevlerTablosu");
             HasKey(x => x.ID);
 
             Property(u => u.CHKKodu)

@@ -14,6 +14,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Proje
     {
         public ProjeKaynaklarMap()
         {
+            ToTable("ProjeKaynaklarTablosu");
             HasKey(x => x.ID);
 
             Property(u => u.HesapKodu)
