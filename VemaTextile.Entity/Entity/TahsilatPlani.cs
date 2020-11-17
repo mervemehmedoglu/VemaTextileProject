@@ -12,7 +12,6 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        
         public int IDHesapKodu { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -22,8 +21,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
         public string HesapAdi { get; set; }
-
-        
 
         public DateTime Tarih { get; set; }
 
@@ -35,13 +32,10 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-      
-
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string OdemeTipi { get; set; }
 
-        
         [Required]
         public DateTime OdemeTarihi { get; set; }
 

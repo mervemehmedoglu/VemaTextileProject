@@ -14,7 +14,6 @@ namespace VemaTextile.Models.Class
 
         public int IDUstaKodu { get; set; }
 
-        
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string UstaKodu { get; set; }
@@ -24,8 +23,6 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-        
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]

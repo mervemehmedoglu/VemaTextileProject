@@ -68,7 +68,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string IslemTipi { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -128,7 +127,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Irsfat { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -175,8 +173,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string SeriNo { get; set; }
 
-       
-
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Kod1 { get; set; }
@@ -189,7 +185,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod3 { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
