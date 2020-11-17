@@ -10,7 +10,7 @@ namespace VemaTextile.Models.Class
     public class KarmaKoli
     {
         [Key]
-        [Required]
+        
         public int ID { get; set; }
         public int IDMamulMalKodu { get; set; }
         public int IDHammaddeMalKodu { get; set; }

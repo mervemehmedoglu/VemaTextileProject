@@ -84,28 +84,28 @@ namespace VemaTextile.Models.Class
         public string Birim1 { get; set; }
 
         [Column(TypeName = "money")]
-        public string BirimMiktar { get; set; }
+        public decimal BirimMiktar { get; set; }
 
         [Column(TypeName = "money")]
-        public string Miktar { get; set; }
+        public decimal Miktar { get; set; }
 
         [Column(TypeName = "money")]
-        public string SevkMiktar { get; set; }
+        public decimal SevkMiktar { get; set; }
 
         [Column(TypeName = "money")]
-        public string OranIskonto3 { get; set; }
+        public decimal OranIskonto3 { get; set; }
 
         [Column(TypeName = "money")]
-        public string BirimFiyat { get; set; }
+        public decimal BirimFiyat { get; set; }
 
         [Column(TypeName = "money")]
-        public string Fiyat { get; set; }
+        public decimal Fiyat { get; set; }
 
         [Column(TypeName = "money")]
-        public string BirimTutar { get; set; }
+        public decimal BirimTutar { get; set; }
 
         [Column(TypeName = "money")]
-        public string Tutar { get; set; }
+        public decimal Tutar { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
@@ -116,13 +116,13 @@ namespace VemaTextile.Models.Class
         public string DovizCinsi { get; set; }
 
         [Column(TypeName = "money")]
-        public string DovizKuru { get; set; }
+        public decimal DovizKuru { get; set; }
 
         [Column(TypeName = "money")]
-        public string DovizBirimFiyat { get; set; }
+        public decimal DovizBirimFiyat { get; set; }
 
         [Column(TypeName = "money")]
-        public string DovizTutar { get; set; }
+        public decimal DovizTutar { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
@@ -134,37 +134,37 @@ namespace VemaTextile.Models.Class
         public string KaynakEvrakTipi { get; set; }
 
         [Column(TypeName = "money")]
-        public string KDVOran { get; set; }
+        public decimal KDVOran { get; set; }
 
         [Column(TypeName = "money")]
-        public string KDVTutar { get; set; }
+        public decimal KDVTutar { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
         public string KDVDahilHaric { get; set; }
 
         [Column(TypeName = "money")]
-        public string OTVOran { get; set; }
+        public decimal OTVOran { get; set; }
 
 
         [Column(TypeName = "money")]
-        public string OTVTutar { get; set; }
+        public decimal OTVTutar { get; set; }
 
 
         [Column(TypeName = "money")]
-        public string OranIskonto { get; set; }
+        public decimal OranIskonto { get; set; }
 
         [Column(TypeName = "money")]
-        public string TutarIskonto { get; set; }
+        public decimal TutarIskonto { get; set; }
 
         [Column(TypeName = "money")]
-        public string ToplamIskonto { get; set; }
+        public decimal ToplamIskonto { get; set; }
 
         [Column(TypeName = "money")]
-        public string MasrafTutar { get; set; }
+        public decimal MasrafTutar { get; set; }
 
         [Column(TypeName = "money")]
-        public string OranIskonto2 { get; set; }
+        public decimal OranIskonto2 { get; set; }
 
         
         [Required]

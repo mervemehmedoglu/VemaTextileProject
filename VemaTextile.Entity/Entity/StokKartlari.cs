@@ -137,13 +137,13 @@ namespace VemaTextile.Models.Class
         public string Barkod3 { get; set; }
 
         [Column(TypeName = "money")]
-        public string SatisFiyati1 { get; set; }
+        public decimal SatisFiyati1 { get; set; }
 
         [Column(TypeName = "money")]
-        public string SatisFiyati2 { get; set; }
+        public decimal SatisFiyati2 { get; set; }
 
         [Column(TypeName = "money")]
-        public string SatisFiyati3 { get; set; }
+        public decimal SatisFiyati3 { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(5)]
@@ -158,13 +158,13 @@ namespace VemaTextile.Models.Class
         public string KDVDahiliHaric3 { get; set; }
 
         [Column(TypeName = "money")]
-        public string DovizSatisFiyati1 { get; set; }
+        public decimal DovizSatisFiyati1 { get; set; }
 
         [Column(TypeName = "money")]
-        public string DovizSatisFiyati2 { get; set; }
+        public decimal DovizSatisFiyati2 { get; set; }
 
         [Column(TypeName = "money")]
-        public string DovizSatisFiyati3 { get; set; }
+        public decimal DovizSatisFiyati3 { get; set; }
 
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
