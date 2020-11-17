@@ -9,9 +9,9 @@ using VemaTextile.Models.Class;
 
 namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.FaturaBilgi
 {
-    public class FaturaBilgiMap : EntityTypeConfiguration<FaturaBilgileri>
+    public class FaturaBilgileriMap : EntityTypeConfiguration<FaturaBilgileri>
     {
-        public FaturaBilgiMap()
+        public FaturaBilgileriMap()
         {
             ToTable("FaturaBilgiTablosu");
 

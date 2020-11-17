@@ -40,16 +40,13 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Alinan
                .HasMaxLength(50);
 
 
-
             Property(u => u.CekiVeren)
                 .IsUnicode()
                 .HasMaxLength(20);
 
-
             Property(u => u.CekiVerenUnvan)
                 .IsUnicode()
                 .HasMaxLength(50);
-
 
 
             Property(u => u.CekTipi)

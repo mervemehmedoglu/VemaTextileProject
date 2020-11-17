@@ -7,7 +7,7 @@ using System.Data.Entity.ModelConfiguration;
 using VemaTextile.Entity.Entity;
 using VemaTextile.Models.Class;
 
-namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Karma_Koliler
+namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.KarmaKoliler
 {
     public class KarmaKoliMap : EntityTypeConfiguration<KarmaKoli>
     {
