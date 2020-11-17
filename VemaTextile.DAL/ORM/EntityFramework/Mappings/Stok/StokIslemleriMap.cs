@@ -13,6 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Stok
     {
         public StokIslemleriMap()
         {
+            ToTable("StokIslemleriTablosu");
             HasKey(x => x.ID);
 
             Property(u => u.MalKodu)

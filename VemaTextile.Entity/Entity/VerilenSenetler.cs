@@ -131,17 +131,14 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Aciklama { get; set; }
 
-        
-
-
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Kaydeden { get; set; }
 
         public DateTime KayitTarihi { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Degistiren { get; set; }
 
         public DateTime DegisiklikTarihi { get; set; }

@@ -13,6 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Muhasebe
     {
         public MuhasebeIsletmeMap()
         {
+            ToTable("MuhasebeIsletmeTablosu");
             HasKey(x => x.ID);
 
             Property(u => u.IsletmeKodu)

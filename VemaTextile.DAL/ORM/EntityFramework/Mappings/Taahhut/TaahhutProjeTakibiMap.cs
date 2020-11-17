@@ -13,6 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Taahhut
     {
         public TaahhutProjeTakibiMap()
         {
+            ToTable("TaahhutProjeTakibiTablosu");
             HasKey(x => x.ID);
 
             Property(u => u.CHKKodu)
