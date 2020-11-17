@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Abstracts\ICookieService.cs" />
     <Compile Include="Services\Abstracts\IEncryptor.cs" />
@@ -94,16 +95,23 @@
     <Compile Include="Validations\ProjeKategoriler.cs" />
     <Compile Include="Validations\ProjeKaynaklarValidator.cs" />
     <Compile Include="Validations\ProjeTakibi.cs" />
+    <Compile Include="Validations\Sayimİslemleri.cs" />
     <Compile Include="Validations\SilinenKayitlarValidator.cs" />
     <Compile Include="Validations\SiparisIslemleriValidator.cs" />
+    <Compile Include="Validations\SonEvrakNotlar.cs" />
     <Compile Include="Validations\StokIslemleriValidator.cs" />
     <Compile Include="Validations\StokKartlariValidator.cs" />
     <Compile Include="Validations\TaahhutKesifOzetiValidator.cs" />
+    <Compile Include="Validations\TaahhutMaliyet.cs" />
     <Compile Include="Validations\TaahhutMDetayValidator.cs" />
     <Compile Include="Validations\TaahhutProjeTakibiValidator.cs" />
+    <Compile Include="Validations\TaahhutTeklifMaliyet.cs" />
     <Compile Include="Validations\TaahhutTeklifUstaBilgileriValidator.cs" />
+    <Compile Include="Validations\TaahhutUstaBilgileri.cs" />
+    <Compile Include="Validations\TahsilatPlani.cs" />
     <Compile Include="Validations\TeklifIslemleriValidator.cs" />
     <Compile Include="Validations\VerilenCeklerValidator.cs" />
+    <Compile Include="Validations\VerilenSenetler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
@@ -127,6 +135,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
     <Folder Include="Validations\AccountingValidations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

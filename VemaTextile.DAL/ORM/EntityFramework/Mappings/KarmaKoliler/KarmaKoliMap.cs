@@ -16,82 +16,74 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Karma_Koliler
             ToTable("KarmaKoliTablosu");
 
             HasKey(x => x.ID);
-            Property(x => x.ID)
-                .HasColumnName("ID");
-
 
             Property(u => u.MamulMalKodu)
                 .HasMaxLength(20)
-                .HasColumnName("MamulMalKodu");
+                .IsUnicode();
+
 
 
             Property(u => u.MamulMalAdi)
                 .HasMaxLength(50)
-                .HasColumnName("MamulMalAdi");
+                .IsUnicode();
+
 
             Property(u => u.HammaddeMalKodu)
                 .HasMaxLength(20)
-                .HasColumnName("HammaddeMalKodu");
+                .IsUnicode();
+
 
             Property(u => u.HammaddeMalAdi)
                 .HasMaxLength(50)
-                .HasColumnName("HammaddeMalAdi");
+                .IsUnicode();
+
 
             Property(u => u.MamulYariMamul)
                .HasMaxLength(20)
-               .HasColumnName("MamulYariMamul");
+               .IsUnicode();
+
 
             Property(u => u.Birim)
                .HasMaxLength(20)
-               .HasColumnName("Birim");
+               .IsUnicode();
 
             Property(u => u.EvrakNo)
                .HasMaxLength(20)
-               .HasColumnName("EvrakNo");
+               .IsUnicode();
+
 
             Property(u => u.Birim1)
                .HasMaxLength(20)
-               .HasColumnName("Birim1");
-
-            Property(u => u.Miktar)
-               .HasColumnName("Miktar");
+               .IsUnicode();
 
             Property(u => u.MaliyetSekli)
                .HasMaxLength(50)
-               .HasColumnName("MaliyetSekli");
+               .IsUnicode();
+
 
             Property(u => u.Depo)
                .HasMaxLength(20)
-               .HasColumnName("Depo");
+               .IsUnicode();
+
 
             Property(u => u.SeriNo)
                .HasMaxLength(20)
-               .HasColumnName("SeriNo");
+               .IsUnicode();
+
 
             Property(u => u.Kod1)
                .HasMaxLength(20)
-               .HasColumnName("Kod1");
+               .IsUnicode();
+
 
             Property(u => u.Kod2)
                .HasMaxLength(20)
-               .HasColumnName("Kod2");
+               .IsUnicode();
+
 
             Property(u => u.Kod3)
                .HasMaxLength(20)
-               .HasColumnName("Kod3");
-
-            Property(u => u.BirimFiyat)
-               .HasColumnName("BirimFiyat");
-
-            Property(u => u.BirimTutar)
-               .HasColumnName("BirimTutar");
-
-            Property(u => u.Fiyat)
-                .HasColumnName("Fiyat");
-
-            Property(u => u.Tutar)
-                .HasColumnName("Tutar");
-
+               .IsUnicode();
         }
     }
 }

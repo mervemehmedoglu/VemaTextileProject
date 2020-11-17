@@ -40,7 +40,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Birim { get; set; }
 
-        [Column(TypeName = "decimal(18,6)")]
+        [Column(TypeName = "decimal")]
         public decimal BirimMiktar { get; set; }
 
         [Column(TypeName = "nvarchar")]
