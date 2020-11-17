@@ -17,8 +17,6 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string EvrakNo { get; set; }
 
-    
-
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -67,7 +65,7 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kullanan { get; set; }
 
-        [Column(TypeName = "nhtext")]
+        [Column(TypeName = "ntext")]
         public string Aciklama { get; set; }
 
         [Required]

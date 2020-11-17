@@ -20,8 +20,6 @@ namespace VemaTextile.Models.Class
         [StringLength(2)]
         public string Seri { get; set; }
 
-        
-
         [Column(TypeName = "nvarchar")]
         [StringLength(1)]
         public string Ok { get; set; }

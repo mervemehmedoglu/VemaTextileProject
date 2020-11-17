@@ -19,7 +19,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string CHKKodu { get; set; }
 
-
         [Column(TypeName ="nvarchar")]
         [StringLength(20)]
         public string Malkodu { get; set; }
@@ -37,7 +36,6 @@ namespace VemaTextile.Models.Class
         [StringLength(50)]
         public string Aciklama { get; set; }
 
-        
         [Required]
         public DateTime Tarih { get; set; }
 
@@ -56,22 +54,16 @@ namespace VemaTextile.Models.Class
         [StringLength(8)]
         public string TeklifNo { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTipi { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string IslemTuru { get; set; }
 
-        
-       
-
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(50)]
@@ -167,8 +159,6 @@ namespace VemaTextile.Models.Class
         [Column(TypeName = "money")]
         public decimal MasrafTutar { get; set; }
 
-        
-
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]
         public string Depo { get; set; }
@@ -201,7 +191,6 @@ namespace VemaTextile.Models.Class
         [StringLength(20)]
         public string Kod6 { get; set; }
 
-        
         [Required]
         [Column(TypeName = "nvarchar")]
         [StringLength(20)]

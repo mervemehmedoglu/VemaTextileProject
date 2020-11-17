@@ -69,14 +69,14 @@ namespace VemaTextile.Models.Class
         public string Kod3 { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Kaydeden { get; set; }
 
         public DateTime KayitTarihi { get; set; }
         public DateTime KayitSaati { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Degistiren { get; set; }
 
         public DateTime DegisiklikTarihi { get; set; }

@@ -12,7 +12,6 @@ namespace VemaTextile.Models.Class
         [Key]
         public int ID { get; set; }
 
-        
         public int IDMalKodu { get; set; }
 
         [Column(TypeName = "nvarchar")]
@@ -214,7 +213,7 @@ namespace VemaTextile.Models.Class
         public string ParaBirimi3 { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Kaydeden { get; set; }
 
         public DateTime KayitTarihi { get; set; }
@@ -222,7 +221,7 @@ namespace VemaTextile.Models.Class
         public DateTime KayitSaati { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(10)]
+        [StringLength(20)]
         public string Degistiren { get; set; }
 
         public DateTime DegisiklikTarihi { get; set; }

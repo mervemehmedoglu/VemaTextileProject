@@ -60,7 +60,7 @@ namespace VemaTextile.Models.Class
         public string Telefon2 { get; set; }
 
         [Column(TypeName = "nvarchar")]
-        [StringLength(20)]
+        [StringLength(11)]
         public string TcKimlikNo { get; set; }
 
         [Column(TypeName = "nvarchar")]
