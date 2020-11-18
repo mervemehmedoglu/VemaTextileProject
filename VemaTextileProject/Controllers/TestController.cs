@@ -13,5 +13,20 @@ namespace VemaTextileProject.Controllers
         {
             return View();
         }
+
+        public ActionResult Form()
+        {
+            return View();
+        }
+
+        public ActionResult Proje()
+        {
+            return View();
+        }
+
+        public ActionResult Personel()
+        {
+            return View();
+        }
     }
 }

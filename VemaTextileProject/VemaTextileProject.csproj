@@ -4681,6 +4681,9 @@
     <Content Include="Template\vendors\validator\validator.jquery.json" />
     <Content Include="Views\Shared\_LayoutVema.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Test\Form.cshtml" />
+    <Content Include="Views\Test\Proje.cshtml" />
+    <Content Include="Views\Test\Personel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
