@@ -28,5 +28,10 @@ namespace VemaTextileProject.Controllers
         {
             return View();
         }
+
+        public ActionResult Muhasebe()
+        {
+            return View();
+        }
     }
 }
