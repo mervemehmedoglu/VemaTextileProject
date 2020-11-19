@@ -4696,22 +4696,22 @@
     <Content Include="Views\Test\Muhasebe.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Personel\Index.cshtml" />
-    <Content Include="Views\Islemler\Index.cshtml" />
-    <Content Include="Views\Kullanicilar\Index.cshtml" />
-    <Content Include="Views\Mesaj\Index.cshtml" />
-    <Content Include="Views\Muhasebe\Index.cshtml" />
-    <Content Include="Views\Musteri\Index.cshtml" />
-    <Content Include="Views\Odeme\Index.cshtml" />
-    <Content Include="Views\Proje\Index.cshtml" />
-    <Content Include="Views\SonEvrakNotlar\Index.cshtml" />
-    <Content Include="Views\Stok\Index.cshtml" />
-    <Content Include="Views\Taahhut\Index.cshtml" />
-    <Content Include="Views\Tahsilat\Index.cshtml" />
-    <Content Include="Views\Uretim\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Islemler\" />
+    <Folder Include="Views\Kullanicilar\" />
+    <Folder Include="Views\Mesaj\" />
+    <Folder Include="Views\Muhasebe\" />
+    <Folder Include="Views\Musteri\" />
+    <Folder Include="Views\Odeme\" />
+    <Folder Include="Views\Proje\" />
+    <Folder Include="Views\SonEvrakNotlar\" />
+    <Folder Include="Views\Stok\" />
+    <Folder Include="Views\Taahhut\" />
+    <Folder Include="Views\Tahsilat\" />
+    <Folder Include="Views\Uretim\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
