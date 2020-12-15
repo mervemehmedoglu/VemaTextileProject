@@ -13,7 +13,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.KarmaKoliler
     {
         public KarmaKoli2Map()
         {
-            ToTable("KarmaKoliTablosu");
+            ToTable("KarmaKoli2Tablosu");
 
             HasKey(x => x.ID);
             

@@ -29,7 +29,7 @@ namespace VemaTextile.Models.Class
         public string Aciklama { get; set; }
 
         [Column(TypeName = "money")]
-        public string Tutar { get; set; }
+        public decimal Tutar { get; set; }
 
         [Column(TypeName = "decimal")]
         public decimal SiraNo { get; set; }

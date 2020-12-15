@@ -25,9 +25,9 @@ namespace VemaTextile.Models.Class
 
         public DateTime Tarih { get; set; }
 
-        [Required]
+       
         [Column(TypeName = "money")]
-        public string FisNo { get; set; }
+        public decimal FisNo { get; set; }
 
         [Required]
         [Column(TypeName = "money")]

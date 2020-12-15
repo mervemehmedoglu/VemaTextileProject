@@ -25,8 +25,7 @@ namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Muhasebe
                 .HasMaxLength(50)
                 .IsUnicode();
 
-            Property(u => u.FisNo)
-                .IsRequired();
+         
 
             Property(u => u.MaddeNo)
                 .IsRequired();
