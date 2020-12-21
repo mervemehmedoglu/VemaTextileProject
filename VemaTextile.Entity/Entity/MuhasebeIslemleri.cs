@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace VemaTextile.Models.Class
+namespace VemaTextile.Entity.Entity
 {
     public class MuhasebeIslemleri
     {

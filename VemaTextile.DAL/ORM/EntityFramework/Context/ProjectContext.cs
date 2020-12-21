@@ -31,10 +31,12 @@ using VemaTextile.Models.Class;
 
 namespace VemaTextile.DAL.ORM.EntityFramework.Context
 {
-    class ProjectContext : DbContext
+    public class ProjectContext : DbContext
     {
+        
         public ProjectContext() : base("name=dbConn")
         {
+            
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ProjectContext>());
         }
         public DbSet<AciklamaTanimlar> AciklamaTanimlars { get; set; }

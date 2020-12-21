@@ -21,8 +21,393 @@
 <link href="../build/css/custom.min.css" rel="stylesheet">
   
 <div class="container body">
+    <div class="main_container">
+        <div class="">
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="clearfix"></div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        
+                        <div class="x_title">
+                            <h2>Personel Tablosu <small></small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li>
+                                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="#">Settings 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Settings 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="close-link"><i class="fa fa-close"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+
+
+                            <div class="table-responsive">
+                                <table class="table table-striped jambo_table bulk_action">
+                                    <thead>
+                                        <tr class="headings">
+                                            <th>
+                                                <input type="checkbox" id="check-all" class="flat">
+                                            </th>
+                                            <th class="column-title">Id </th>
+                                            <th class="column-title">Invoic Date </th>
+                                            <th class="column-title">Order </th>
+                                            <th class="column-title">Bill to Name </th>
+                                            <th class="column-title">Status </th>
+                                            <th class="column-title">Amount </th>
+                                            <th class="column-title no-link last">
+                                                <span class="nobr">Action</span>
+                                            </th>
+
+                                            <th class="bulk-actions" colspan="8">
+                                                <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="even pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">
+                                                <a href="#" class="btn btn-dark btn-sm">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </a>
+
+                                                <a href="#" class="btn btn-dark btn-sm">
+                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                </a>
+
+                                                <a href="#" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#Modal1">
+                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                </a>
+                                                <div class="modal" id="Modal1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h2>Personel Kayıt Ekleme</h2>
+                                                            </div>
+                                                            <br />
+                                                            <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                                                                        Ad<span class="required">*</span>
+                                                                    </label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" placeholder="Ad giriniz">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                                                                        Soyad <span class="required">*</span>
+                                                                    </label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Telefon</label>
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <div class="input-group">
+                                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                                                            <input id="Telefon" type="tel" class="form-control col-md-7 col-xs-12" name="Telefon">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">E-mail</label>
+
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <div class="input-group">
+                                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                                            <input id="email" type="email" class="form-control col-md-7 col-xs-12" name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+
+
+                                                                <div class="form-group">
+                                                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Example</label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <div>
+                                                                            <select name="example" class="form-control col-md-7 col-xs-12">
+                                                                                <option value="A">A</option>
+                                                                                <option value="B">B</option>
+                                                                                <option value="-">Other</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Ülke</label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <div>
+                                                                            <input type="radio" id="Turkiye" name="RadioButton" value="Turkiye">
+                                                                            <label for="Turkiye"> Türkiye</label><br>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input type="radio" id="Bulgaristan" name="RadioButton" value="Fransa">
+                                                                            <label for="Fransa"> Fransa</label><br>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input type="radio" id="Bulgaristan" name="RadioButton" value="Bulgaristan">
+                                                                            <label for="Bulgaristan"> Bulgaristan</label><br>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Dil</label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <div>
+                                                                            <input type="checkbox" id="Turkce" name="Turkce" value="Turkce">
+                                                                            <label for="turkce"> Türkçe</label><br>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input type="checkbox" id="Ingilizce" name="Ingilizce" value="Ingilizce">
+                                                                            <label for="Ingilizce"> İngilizce</label><br>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input type="checkbox" id="Almanca" name="Almanca" value="Almanca">
+                                                                            <label for="Almanca"> Almanca</label><br>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Cinsiyet</label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="gender" value="male" data-parsley-multiple="gender"> &nbsp; Kadın &nbsp;
+                                                                            </label>
+                                                                            <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                                <input type="radio" name="gender" value="female" data-parsley-multiple="gender"> Erkek
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                                                        Doğum Tarihi <span class="required">*</span>
+                                                                    </label>
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                                                        <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="datetime-local">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ln_solid"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                                                        <button class="btn btn-primary" type="button">İptal</button>
+                                                                        <button class="btn btn-primary" type="reset">Sıfırla</button>
+                                                                        <button type="submit" class="btn btn-success">Gönder</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                </div>  @*Modal Kısmı*@
+
+
+                                            </td>
+
+
+
+                                            <td class=" ">121000040</td>
+                                            <td class=" ">May 23, 2014 11:47:56 PM </td>
+                                            <td class=" ">121000210 <i class="success fa fa-long-arrow-up"></i></td>
+                                            <td class=" ">John Blank L</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$7.45</td>
+
+
+                                        </tr>
+                                        <tr class="odd pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000039</td>
+                                            <td class=" ">May 23, 2014 11:30:12 PM</td>
+                                            <td class=" ">
+                                                121000208 <i class="success fa fa-long-arrow-up"></i>
+                                            </td>
+                                            <td class=" ">John Blank L</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$741.20</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="even pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000038</td>
+                                            <td class=" ">May 24, 2014 10:55:33 PM</td>
+                                            <td class=" ">
+                                                121000203 <i class="success fa fa-long-arrow-up"></i>
+                                            </td>
+                                            <td class=" ">Mike Smith</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$432.26</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000037</td>
+                                            <td class=" ">May 24, 2014 10:52:44 PM</td>
+                                            <td class=" ">121000204</td>
+                                            <td class=" ">Mike Smith</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$333.21</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="even pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000040</td>
+                                            <td class=" ">May 24, 2014 11:47:56 PM </td>
+                                            <td class=" ">121000210</td>
+                                            <td class=" ">John Blank L</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$7.45</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000039</td>
+                                            <td class=" ">May 26, 2014 11:30:12 PM</td>
+                                            <td class=" ">
+                                                121000208 <i class="error fa fa-long-arrow-down"></i>
+                                            </td>
+                                            <td class=" ">John Blank L</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$741.20</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="even pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000038</td>
+                                            <td class=" ">May 26, 2014 10:55:33 PM</td>
+                                            <td class=" ">121000203</td>
+                                            <td class=" ">Mike Smith</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$432.26</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000037</td>
+                                            <td class=" ">May 26, 2014 10:52:44 PM</td>
+                                            <td class=" ">121000204</td>
+                                            <td class=" ">Mike Smith</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$333.21</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="even pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000040</td>
+                                            <td class=" ">May 27, 2014 11:47:56 PM </td>
+                                            <td class=" ">121000210</td>
+                                            <td class=" ">John Blank L</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$7.45</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd pointer">
+                                            <td class="a-center ">
+                                                <input type="checkbox" class="flat" name="table_records">
+                                            </td>
+                                            <td class=" ">121000039</td>
+                                            <td class=" ">May 28, 2014 11:30:12 PM</td>
+                                            <td class=" ">121000208</td>
+                                            <td class=" ">John Blank L</td>
+                                            <td class=" ">Paid</td>
+                                            <td class="a-right a-right ">$741.20</td>
+                                            <td class=" last">
+                                                <a href="#">View</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <a href="#" class="btn btn-dark btn" data-toggle="modal" data-target="#Modal1">
+                                               Kayıt Ekle
+                                            </a>
+                                                
+                                            
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+                                
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+</div>  @*Personel Listeleme*@
+
+<div class="container body">
     <div class="x_panel">
         <div class="x_title">
+            
             <h2>Personel Kayıt Ekleme</h2>
             <ul class="nav navbar-right panel_toolbox">
                 <li>
@@ -41,6 +426,9 @@
                 </li>
                 <li>
                     <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+                <li>
+
                 </li>
             </ul>
             <div class="clearfix"></div>
@@ -172,239 +560,173 @@
             </form>
         </div>
     </div>
-</div>
+</div>  @*Personel Kayıt Ekle*@
+
+
 
 <div class="container body">
-    <div class="main_container">
-            <div class="">
-                <div class="clearfix"></div>
-                <div class="row">
-                    <div class="clearfix"></div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="x_panel">
-                            <div class="x_title">
-                                <h2>Personel Tablosu <small></small></h2>
-                                <ul class="nav navbar-right panel_toolbox">
-                                    <li>
-                                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li>
-                                                <a href="#">Settings 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Settings 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="close-link"><i class="fa fa-close"></i></a>
-                                    </li>
-                                </ul>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="x_content">
-                                
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Personel Kayıt Sistemi</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a data-toggle="collapse" href="#collapse1" class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#collapse1"><i class="fa fa-chevron-up"></i></a>
+                </li>
 
-                                <div class="table-responsive">
-                                    <table class="table table-striped jambo_table bulk_action">
-                                        <thead>
-                                            <tr class="headings">
-                                                <th>
-                                                    <input type="checkbox" id="check-all" class="flat">
-                                                </th>
-                                                <th class="column-title">Id </th>
-                                                <th class="column-title">Invoic Date </th>
-                                                <th class="column-title">Order </th>
-                                                <th class="column-title">Bill to Name </th>
-                                                <th class="column-title">Status </th>
-                                                <th class="column-title">Amount </th>
-                                                <th class="column-title no-link last">
-                                                    <span class="nobr">Action</span>
-                                                </th>
-                                                
-                                                <th class="bulk-actions" colspan="8">
-                                                    <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
-                                                </th>
-                                            </tr>
-                                        </thead>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="#">Settings 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings 2</a>
+                        </li>
+                    </ul>
+                </li>
 
-                                        <tbody>
-                                            <tr class="even pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">
-                                                    <a href="#" class="btn btn-dark btn-sm">
-                                                        <span class="glyphicon glyphicon-trash"></span>
-                                                    </a>
+            </ul>
+        <div class="clearfix"></div>
+    </div>
+        <div id="collapse1" class="panel-collapse collapse">
+            <div class="x_content">
+                <br />
+                <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
 
-                                                    <a href="#" class="btn btn-dark btn-sm">
-                                                        <span class="glyphicon glyphicon-pencil"></span>
-                                                    </a>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                            Ad<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" placeholder="Ad giriniz">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                            Soyad <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
 
-                                                </td>
-                                                
-                                                <td class=" ">121000040</td>
-                                                <td class=" ">May 23, 2014 11:47:56 PM </td>
-                                                <td class=" ">121000210 <i class="success fa fa-long-arrow-up"></i></td>
-                                                <td class=" ">John Blank L</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$7.45</td>
-                                               
+                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
 
-                                            </tr>
-                                            <tr class="odd pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000039</td>
-                                                <td class=" ">May 23, 2014 11:30:12 PM</td>
-                                                <td class=" ">
-                                                    121000208 <i class="success fa fa-long-arrow-up"></i>
-                                                </td>
-                                                <td class=" ">John Blank L</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$741.20</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="even pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000038</td>
-                                                <td class=" ">May 24, 2014 10:55:33 PM</td>
-                                                <td class=" ">
-                                                    121000203 <i class="success fa fa-long-arrow-up"></i>
-                                                </td>
-                                                <td class=" ">Mike Smith</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$432.26</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="odd pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000037</td>
-                                                <td class=" ">May 24, 2014 10:52:44 PM</td>
-                                                <td class=" ">121000204</td>
-                                                <td class=" ">Mike Smith</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$333.21</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="even pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000040</td>
-                                                <td class=" ">May 24, 2014 11:47:56 PM </td>
-                                                <td class=" ">121000210</td>
-                                                <td class=" ">John Blank L</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$7.45</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="odd pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000039</td>
-                                                <td class=" ">May 26, 2014 11:30:12 PM</td>
-                                                <td class=" ">
-                                                    121000208 <i class="error fa fa-long-arrow-down"></i>
-                                                </td>
-                                                <td class=" ">John Blank L</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$741.20</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="even pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000038</td>
-                                                <td class=" ">May 26, 2014 10:55:33 PM</td>
-                                                <td class=" ">121000203</td>
-                                                <td class=" ">Mike Smith</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$432.26</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="odd pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000037</td>
-                                                <td class=" ">May 26, 2014 10:52:44 PM</td>
-                                                <td class=" ">121000204</td>
-                                                <td class=" ">Mike Smith</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$333.21</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
+                    <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Telefon</label>
 
-                                            <tr class="even pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000040</td>
-                                                <td class=" ">May 27, 2014 11:47:56 PM </td>
-                                                <td class=" ">121000210</td>
-                                                <td class=" ">John Blank L</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$7.45</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="odd pointer">
-                                                <td class="a-center ">
-                                                    <input type="checkbox" class="flat" name="table_records">
-                                                </td>
-                                                <td class=" ">121000039</td>
-                                                <td class=" ">May 28, 2014 11:30:12 PM</td>
-                                                <td class=" ">121000208</td>
-                                                <td class=" ">John Blank L</td>
-                                                <td class=" ">Paid</td>
-                                                <td class="a-right a-right ">$741.20</td>
-                                                <td class=" last">
-                                                    <a href="#">View</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                <input id="Telefon" type="tel" class="form-control col-md-7 col-xs-12" name="Telefon">
                             </div>
                         </div>
                     </div>
-                </div>
-            
-        </div>
-        <!-- /page content -->
+                    <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">E-mail</label>
 
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input id="email" type="email" class="form-control col-md-7 col-xs-12" name="email">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Example</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div>
+                                <select name="example" class="form-control col-md-7 col-xs-12">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="-">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Ülke</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div>
+                                <input type="radio" id="Turkiye" name="RadioButton" value="Turkiye">
+                                <label for="Turkiye"> Türkiye</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="Bulgaristan" name="RadioButton" value="Fransa">
+                                <label for="Fransa"> Fransa</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="Bulgaristan" name="RadioButton" value="Bulgaristan">
+                                <label for="Bulgaristan"> Bulgaristan</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Dil</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div>
+                                <input type="checkbox" id="Turkce" name="Turkce" value="Turkce">
+                                <label for="turkce"> Türkçe</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Ingilizce" name="Ingilizce" value="Ingilizce">
+                                <label for="Ingilizce"> İngilizce</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Almanca" name="Almanca" value="Almanca">
+                                <label for="Almanca"> Almanca</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Cinsiyet</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div id="gender" class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                    <input type="radio" name="gender" value="male" data-parsley-multiple="gender"> &nbsp; Kadın &nbsp;
+                                </label>
+                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                    <input type="radio" name="gender" value="female" data-parsley-multiple="gender"> Erkek
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                            Doğum Tarihi <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="datetime-local">
+                        </div>
+                    </div>
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                            <button class="btn btn-primary" type="button">İptal</button>
+                            <button class="btn btn-primary" type="reset">Sıfırla</button>
+                            <button type="submit" class="btn btn-success">Gönder</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
     </div>
 </div>
+
+
+
 
 <!-- jQuery -->
 <script src="../vendors/jquery/dist/jquery.min.js"></script>
