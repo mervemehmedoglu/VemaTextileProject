@@ -4733,6 +4733,28 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VemaTextile.BLL\VemaTextile.BLL.csproj">
+      <Project>{1a821a30-5a8b-48a3-bd67-72971d87b919}</Project>
+      <Name>VemaTextile.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VemaTextile.core\VemaTextile.Core.csproj">
+      <Project>{52854a57-ae0c-4aca-85cc-f897ee627931}</Project>
+      <Name>VemaTextile.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VemaTextile.DAL\VemaTextile.DAL.csproj">
+      <Project>{a8e3bcd8-5960-4cdb-a06e-abca6b0e84c3}</Project>
+      <Name>VemaTextile.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VemaTextile.Entity\VemaTextile.Entity.csproj">
+      <Project>{d839a77a-15fe-4123-99b5-68eb4d72fd2b}</Project>
+      <Name>VemaTextile.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VemaTextile.Repository\VemaTextile.Repository.csproj">
+      <Project>{b2666638-0b41-42b3-87a8-e0fdb86945bd}</Project>
+      <Name>VemaTextile.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
