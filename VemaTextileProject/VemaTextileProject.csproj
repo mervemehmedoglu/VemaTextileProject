@@ -135,6 +135,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DepoController.cs" />
     <Compile Include="Controllers\FinansController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IhracatController.cs" />
@@ -4723,6 +4724,7 @@
     <Content Include="Views\SatinAlma\Index.cshtml" />
     <Content Include="Views\Ihracat\Index.cshtml" />
     <Content Include="Views\test2\Index.cshtml" />
+    <Content Include="Views\Depo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
