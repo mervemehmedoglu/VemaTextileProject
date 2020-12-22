@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using VemaTextile.Repository.Repositories.Abstracts;
 using VemaTextile.Entity.Entity;
-using VemaTextile.Models.Class;
 
 namespace VemaTextile.BLL.Validations
 {

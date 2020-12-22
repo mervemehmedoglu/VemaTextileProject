@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using VemaTextile.Repository.Repositories.Abstracts;
 using FluentValidation;
 using VemaTextile.Entity.Entity;
-using VemaTextile.Models.Class;
+
 
 namespace VemaTextile.BLL.Validations
 {
@@ -31,8 +31,7 @@ namespace VemaTextile.BLL.Validations
                 .NotNull().WithMessage("Bu alan boş geçilemez");
             RuleFor(x => x.Kaydeden)
                 .NotNull().WithMessage("Bu alan boş geçilemez");
-            RuleFor(x => x.IDMailKodu)
-                .NotNull().WithMessage("Bu alan boş geçilemez");
+            
         }
         private bool BeAValidDate(DateTime date)
         {

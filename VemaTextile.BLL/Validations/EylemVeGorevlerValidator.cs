@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using VemaTextile.Repository.Repositories.Abstracts;
 using FluentValidation;
 using VemaTextile.Entity.Entity;
-using VemaTextile.Models.Class;
+
 
 
 namespace VemaTextile.BLL.Validations
@@ -18,8 +18,7 @@ namespace VemaTextile.BLL.Validations
         public EylemVeGorevlerValidator(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            RuleFor(x => x.ChkKodu)
-                .NotNull().WithMessage("Bu alan boş geçilemez");
+            
             RuleFor(x => x.ChkAdi)
                  .NotNull().WithMessage("Bu alan boş geçilemez");
             RuleFor(x => x.EylemGorev)

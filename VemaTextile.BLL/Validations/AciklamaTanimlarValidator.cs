@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VemaTextile.Entity.Entity;
 using FluentValidation;
-using VemaTextile.Models.Class;
+
 
 namespace VemaTextile.BLL.Validations
 {

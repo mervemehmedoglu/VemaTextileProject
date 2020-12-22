@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VemaTextile.Models.Class;
+
 using VemaTextile.Repository.Repositories.Abstracts;
 using FluentValidation;
 using VemaTextile.Entity.Entity;

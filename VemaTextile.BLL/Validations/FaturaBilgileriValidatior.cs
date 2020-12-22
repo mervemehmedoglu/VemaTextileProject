@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VemaTextile.Models.Class;
+
 using VemaTextile.Repository.Repositories.Abstracts;
 using VemaTextile.Entity.Entity;
 
@@ -17,8 +17,7 @@ namespace VemaTextile.BLL.Validations
         public FauraBilgileriValidator(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            RuleFor(x => x.EvrakNO)
-                .NotEmpty().WithMessage("Kategori Adı alanı boş bırakılamaz.");
+            
 
             _unitOfWork = unitOfWork;
             RuleFor(x => x.Tıp)

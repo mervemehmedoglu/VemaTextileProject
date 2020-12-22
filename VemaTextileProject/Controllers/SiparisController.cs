@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace VemaTextileProject.Controllers
 {
-    public class MesajController : Controller
+    public class SiparisController : Controller
     {
-        // GET: Mesaj
+        // GET: Siparis
         public ActionResult Index()
         {
             return View();

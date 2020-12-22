@@ -135,19 +135,24 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FinansController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IhracatController.cs" />
     <Compile Include="Controllers\IslemlerController.cs" />
     <Compile Include="Controllers\KullanicilarController.cs" />
-    <Compile Include="Controllers\MesajController.cs" />
     <Compile Include="Controllers\MuhasebeController.cs" />
     <Compile Include="Controllers\MusteriController.cs" />
     <Compile Include="Controllers\OdemeController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
+    <Compile Include="Controllers\PlanlamaController.cs" />
     <Compile Include="Controllers\ProjeController.cs" />
+    <Compile Include="Controllers\SatinAlmaController.cs" />
+    <Compile Include="Controllers\SiparisController.cs" />
     <Compile Include="Controllers\SonEvrakNotlarController.cs" />
     <Compile Include="Controllers\StokController.cs" />
     <Compile Include="Controllers\TaahhutController.cs" />
     <Compile Include="Controllers\TahsilatController.cs" />
+    <Compile Include="Controllers\test2Controller.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UretimController.cs" />
     <Compile Include="Global.asax.cs">
@@ -4703,7 +4708,6 @@
     <Content Include="Views\Personel\Index.cshtml" />
     <Content Include="Views\Islemler\Index.cshtml" />
     <Content Include="Views\Kullanicilar\Index.cshtml" />
-    <Content Include="Views\Mesaj\Index.cshtml" />
     <Content Include="Views\Muhasebe\Index.cshtml" />
     <Content Include="Views\Musteri\Index.cshtml" />
     <Content Include="Views\Odeme\Index.cshtml" />
@@ -4715,10 +4719,10 @@
     <Content Include="Views\Uretim\Index.cshtml" />
     <Content Include="Views\Siparis\Index.cshtml" />
     <Content Include="Views\Planlama\Index.cshtml" />
-    <Content Include="Views\Depo\Index.cshtml" />
     <Content Include="Views\Finans\Index.cshtml" />
     <Content Include="Views\SatinAlma\Index.cshtml" />
     <Content Include="Views\Ihracat\Index.cshtml" />
+    <Content Include="Views\test2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

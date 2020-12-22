@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VemaTextile.Repository.Repositories.Abstracts;
 using FluentValidation;
-using VemaTextile.Models.Class;
+using VemaTextile.Entity.Entity;
 
 namespace VemaTextile.BLL.Services.Validations.StockValidations
 {

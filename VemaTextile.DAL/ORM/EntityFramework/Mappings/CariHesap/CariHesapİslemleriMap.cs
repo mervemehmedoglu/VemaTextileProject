@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity.ModelConfiguration;
 using VemaTextile.Entity.Entity;
-using VemaTextile.Models.Class;
-
 namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.CariHesap
 {
     public class CariHesapİslemleriMap : EntityTypeConfiguration<CariHesapİslemleri>

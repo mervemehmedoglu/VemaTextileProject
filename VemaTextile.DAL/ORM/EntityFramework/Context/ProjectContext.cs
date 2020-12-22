@@ -27,7 +27,7 @@ using VemaTextile.DAL.ORM.EntityFramework.Mappings.Teklif;
 using VemaTextile.DAL.ORM.EntityFramework.Mappings.Uretim;
 using VemaTextile.DAL.ORM.EntityFramework.Mappings.Usta;
 using VemaTextile.DAL.ORM.EntityFramework.Mappings.Verilen;
-using VemaTextile.Models.Class;
+using VemaTextile.Entity.Entity;
 
 namespace VemaTextile.DAL.ORM.EntityFramework.Context
 {

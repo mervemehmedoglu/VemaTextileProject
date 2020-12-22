@@ -1,6 +1,8 @@
 ﻿using System.Data.Entity.ModelConfiguration;
 using VemaTextile.Entity.Entity;
-using VemaTextile.Models.Class;
+
+
+
 namespace VemaTextile.DAL.ORM.EntityFramework.Mappings.Muhasebe
 {
     public class MuhasebeHesapKartlariMap : EntityTypeConfiguration<MuhasebeHesapKartlari>

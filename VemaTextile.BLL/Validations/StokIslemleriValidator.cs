@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
 using VemaTextile.Entity.Entity;
-using VemaTextile.Models.Class;
+
 using VemaTextile.Repository.Repositories.Abstracts;
 
 namespace VemaTextile.BLL.Validations
@@ -29,8 +29,7 @@ namespace VemaTextile.BLL.Validations
                .NotEmpty().WithMessage("Bu alan boş bırakılamaz.");
             RuleFor(x => x.IslemTuru)
                .NotEmpty().WithMessage("Bu alan boş bırakılamaz.");
-            RuleFor(x => x.CHKKodu)
-               .NotEmpty().WithMessage("Bu alan boş bırakılamaz.");
+            
             RuleFor(x => x.CHKAdi)
                .NotEmpty().WithMessage("Bu alan boş bırakılamaz.");
             RuleFor(x => x.KaynakEvrakTipi)
